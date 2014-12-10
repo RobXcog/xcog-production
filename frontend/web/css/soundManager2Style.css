@@ -567,6 +567,7 @@ SoundManager2 Style Generated from
 .sm2-volume-control {
  background-image: url(../images/png/volume-high.png);
  background-image: none, url(../images/svg/volume-high.svg);
+
 }
 
 .sm2-volume-control,

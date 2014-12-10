@@ -19,6 +19,7 @@ a {
   position: fixed;
   width: 100%;
   left: 0;
+  height: 75px;
   transition: all 0.3s ease;
 }
 .main-header a {
@@ -36,7 +37,7 @@ a {
 }
 .main-nav ul {
     
-    z-index: 600;
+    z-index: 900;
 }
 .main-nav, .main-nav ul {
   position: fixed;
@@ -49,11 +50,11 @@ a {
 }
 .main-nav a, .main-nav ul li a {
   display: block;
-
   background: linear-gradient(#3e3e3e, #383838);
   border-top: 1px solid #484848;
   border-bottom: 1px solid #2E2E2E;
   color: white;
+  height: 50px;
   padding: 15px;
 }
 .main-nav a:hover, .main-nav li a:hover, .main-nav a:focus {
@@ -90,7 +91,7 @@ a {
 #main-nav:target + .page-wrap .close-menu {
   display: block;
 }
-#main-nav:target + .page-wrap .main-header {
+#main-nav:target + .page-wrap #index-header.main-header {
   width: 80%;
   left: 20%;
 }

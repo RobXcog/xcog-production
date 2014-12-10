@@ -41,7 +41,8 @@ use yii\helpers\Html;
  *         [
  *             'label' => 'Home',
  *             'url' => ['site/index'],
- *             'linkOptions' => [...],
+ *             'linkOpti,
+                          ons' => [...],
  *         ],
  *         [
  *             'label' => 'Dropdown',
@@ -64,7 +65,7 @@ use yii\helpers\Html;
  * @author Antonio Ramirez <amigo.cobos@gmail.com>
  * @since 2.0
  */
-class XcogNav extends \yii\base\Widget
+class XcogNav extends  \yii\base\Widget
 {
     /**
      * @var array list of items in the nav widget. Each array element represents a single
@@ -183,6 +184,9 @@ public function renderItems()
         $url = ArrayHelper::getValue($item, 'url', '#');
         $linkOptions = ArrayHelper::getValue($item, 'linkOptions', []);
 
+        if (isset($item['iconClass'])) {
+            $iconClass = ArrayHelper::getValue($item, 'iconClass');
+                }
         if (isset($item['active'])) {
             $active = ArrayHelper::remove($item, 'active', false);
         } else {
@@ -205,9 +209,21 @@ public function renderItems()
         if ($this->activateItems && $active) {
             Html::addCssClass($options, 'active');
         }
-        return Html::tag('li', Html::a($label, $url, $linkOptions) . Html::a('', $url, ['class' => 'xcogIcon'.$label]).  $items, $options);
-    }
-      protected function renderDropdown($items)
+        if (isset($iconClass)) {
+            
+            if ($url !== null) {
+                $icon = Html::tag('i', '', ['class' => $iconClass]);
+                $iconA = Html::a($label . $icon, $url, $linkOptions);
+                $iconNavItem = Html::tag('li',  $iconA . $items, $options ); 
+                return $iconNavItem;
+            }
+                        
+            return Html::tag('li', Html::a($label, $url, $linkOptions) .  $items, $options);
+            }
+            return Html::tag('li', Html::a($label, $url, $linkOptions) .  $items, $options);
+            }  
+      
+protected function renderDropdown($items)
     {
         return Dropdown::widget([
             'items' => $items,

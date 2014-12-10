@@ -17,13 +17,75 @@ limitations under the License.
     Created on : Nov 16, 2014, 3:37:19 AM
     Author     : Rob Xcog rob@xcogstudios.com (Im usually friendly)
 */
+/* reset :: begin*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
 
+html {
+  line-height: 1;
+}
 
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+/* reset :: end  */
 * {
     
   box-sizing: border-box;
   
 }
+
+body {
+    //background: url('../../images/png/xcogBGMoon.png') right top;
+
+     
+}
+
 header.main-header {
     
 background: -moz-linear-gradient(top,  rgba(30,87,153,1) 0%, rgba(51,122,183,0.98) 30%, rgba(32,124,202,0.95) 84%, rgba(18,48,111,0.94) 96%, rgba(14,29,89,0.78) 99%, rgba(13,23,81,0.78) 100%); /* FF3.6+ */
@@ -43,7 +105,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', end
     margin: 0px 15px 0px 15px;
 }
 .footer {
-    margin: 0px 15px 0px 15px;
+    margin: 125px 15px 0px 15px;
     position: relative;
     padding-bottom: 125px; 
 }
@@ -55,9 +117,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', end
 .bgheight { height: 100%; }
 
 .jumbotron {
-    
     z-index: 25;
-    background: #6A80AD;
+    background: whitesmoke;
 }
 
 .main-header {    
@@ -66,4 +127,37 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', end
 nav #main-nav ul a {
     font: 21px "New Century Schoolbook", serif;
 }
-//dynamic icon refrences
+//-icon refrence
+
+span#logoX {
+position: fixed;
+    top: 50px;
+}
+
+i#logoCircle {
+
+}
+
+i#logoSmiley {
+    
+
+ //   left: 1;
+ color: black;
+ 
+}
+
+span#logoX {
+
+    
+    
+}
+
+// Resume Style
+
+#resumeNavigation {
+    
+    position: relative;
+ 
+    
+    
+}

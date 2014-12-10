@@ -18,7 +18,7 @@ limitations under the License.
     Author     : Rob Xcog rob@xcogstudios.com (Im usually friendly)
 */
 
-#index-bg { 
+#index-bg {   
     position: fixed; top: 0; left: 0; 
     z-index: -100;
 }
@@ -30,5 +30,8 @@ limitations under the License.
     background: #666666;
     
 }
+.contentContainer {
+    
+        background-image: url(../images/png/xcogBG.png);
 
-3
+}
