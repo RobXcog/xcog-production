@@ -21,6 +21,8 @@ class SiteController extends Controller
     /**
      * @inheritdoc
      */
+    public $layout = '@app/views/layouts/dashboard'; //edited rob@xcogstudios.com
+    
     public function behaviors()
     {
         return [
@@ -68,7 +70,10 @@ class SiteController extends Controller
 
     public function actionIndex()
     {
-        return $this->render('index');
+        
+        return $this->render('index', [
+            'layout' => $this->layout, 
+        ]);
     }
 
     public function actionLogin()
@@ -83,6 +88,7 @@ class SiteController extends Controller
         } else {
             return $this->render('login', [
                 'model' => $model,
+                'layout' => $this->layout,
             ]);
         }
     }
@@ -108,13 +114,16 @@ class SiteController extends Controller
         } else {
             return $this->render('contact', [
                 'model' => $model,
+                'layout' => $this->layout,
             ]);
         }
     }
 
     public function actionAbout()
     {
-        return $this->render('about');
+        return $this->render('about', [
+            'layout' => $this->layout,
+        ]);
     }
 
     public function actionSignup()
@@ -130,6 +139,7 @@ class SiteController extends Controller
 
         return $this->render('signup', [
             'model' => $model,
+            'layout' => $this->layout,
         ]);
     }
 
@@ -148,6 +158,7 @@ class SiteController extends Controller
 
         return $this->render('requestPasswordResetToken', [
             'model' => $model,
+            'layout' => $this->layout,
         ]);
     }
 
@@ -167,6 +178,8 @@ class SiteController extends Controller
 
         return $this->render('resetPassword', [
             'model' => $model,
+            'layout' => $this->layout,
+            
         ]);
     }
 }

@@ -1,0 +1,781 @@
+.icon {
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-image: url(sprite.svg);
+	background-color: ;
+}
+.xcogIconhome {
+	width: 32px;
+	height: 32px;
+	background-position: 0 0;
+}
+.xcogIconoffice {
+	width: 32px;
+	height: 32px;
+	background-position: -48px 0;
+}
+.xcogIconpencil {
+	width: 32px;
+	height: 32px;
+	background-position: -96px 0;
+}
+.xcogIconquill {
+	width: 32px;
+	height: 32px;
+	background-position: -144px 0;
+}
+.xcogIconpen {
+	width: 32px;
+	height: 32px;
+	background-position: -192px 0;
+}
+.xcogIconblog {
+	width: 32px;
+	height: 32px;
+	background-position: -240px 0;
+}
+.xcogIconpaint-format {
+	width: 32px;
+	height: 32px;
+	background-position: -288px 0;
+}
+.xcogIconimage {
+	width: 32px;
+	height: 32px;
+	background-position: -336px 0;
+}
+.xcogIconcamera {
+	width: 32px;
+	height: 32px;
+	background-position: -384px 0;
+}
+.xcogIconmusic {
+	width: 32px;
+	height: 32px;
+	background-position: -432px 0;
+}
+.xcogIconheadphones {
+	width: 32px;
+	height: 32px;
+	background-position: -480px 0;
+}
+.xcogIconplay {
+	width: 32px;
+	height: 32px;
+	background-position: -528px 0;
+}
+.xcogIconcamera2 {
+	width: 32px;
+	height: 32px;
+	background-position: -576px 0;
+}
+.xcogIcondice {
+	width: 32px;
+	height: 32px;
+	background-position: -624px 0;
+}
+.xcogIconbullhorn {
+	width: 32px;
+	height: 32px;
+	background-position: -672px 0;
+}
+.xcogIconconnection {
+	width: 40px;
+	height: 32px;
+	background-position: -720px 0;
+}
+.xcogIconfeed {
+	width: 32px;
+	height: 32px;
+	background-position: 0 -48px;
+}
+.xcogIconprofile {
+	width: 32px;
+	height: 32px;
+	background-position: -48px -48px;
+}
+.xcogIconticket {
+	width: 32px;
+	height: 32px;
+	background-position: -96px -48px;
+}
+.xcogIconcart {
+	width: 32px;
+	height: 32px;
+	background-position: -144px -48px;
+}
+.xcogIconphone {
+	width: 32px;
+	height: 32px;
+	background-position: -192px -48px;
+}
+.xcogIconscreen {
+	width: 32px;
+	height: 32px;
+	background-position: -240px -48px;
+}
+.xcogIconmobile {
+	width: 32px;
+	height: 32px;
+	background-position: -288px -48px;
+}
+.xcogIconmobile2 {
+	width: 32px;
+	height: 32px;
+	background-position: -336px -48px;
+}
+.xcogIcontv {
+	width: 32px;
+	height: 32px;
+	background-position: -384px -48px;
+}
+.xcogIcondisk {
+	width: 32px;
+	height: 32px;
+	background-position: -432px -48px;
+}
+.xcogIconbubble {
+	width: 32px;
+	height: 32px;
+	background-position: -480px -48px;
+}
+.xcogIconbubble2 {
+	width: 32px;
+	height: 32px;
+	background-position: -528px -48px;
+}
+.xcogIconuser {
+	width: 32px;
+	height: 32px;
+	background-position: -576px -48px;
+}
+.xcogIconusers {
+	width: 32px;
+	height: 32px;
+	background-position: -624px -48px;
+}
+.xcogIconuser2 {
+	width: 32px;
+	height: 32px;
+	background-position: -672px -48px;
+}
+.xcogIconquotes-left {
+	width: 32px;
+	height: 32px;
+	background-position: -720px -48px;
+}
+.xcogIconbinoculars {
+	width: 32px;
+	height: 32px;
+	background-position: 0 -96px;
+}
+.xcogIconcog {
+	width: 32px;
+	height: 32px;
+	background-position: -48px -96px;
+}
+.xcogIconcogs {
+	width: 32px;
+	height: 32px;
+	background-position: -96px -96px;
+}
+.xcogIconhammer {
+	width: 32px;
+	height: 32px;
+	background-position: -144px -96px;
+}
+.xcogIconbars {
+	width: 32px;
+	height: 32px;
+	background-position: -192px -96px;
+}
+.xcogIcontrophy {
+	width: 32px;
+	height: 32px;
+	background-position: -240px -96px;
+}
+.xcogIconglass {
+	width: 32px;
+	height: 32px;
+	background-position: -288px -96px;
+}
+.xcogIconmug {
+	width: 32px;
+	height: 32px;
+	background-position: -336px -96px;
+}
+.xcogIconfood {
+	width: 32px;
+	height: 32px;
+	background-position: -384px -96px;
+}
+.xcogIconmeter {
+	width: 32px;
+	height: 32px;
+	background-position: -432px -96px;
+}
+.xcogIcondashboard {
+	width: 32px;
+	height: 32px;
+	background-position: -480px -96px;
+}
+.xcogIconhammer2 {
+	width: 32px;
+	height: 32px;
+	background-position: -528px -96px;
+}
+.xcogIconfire {
+	width: 32px;
+	height: 32px;
+	background-position: -576px -96px;
+}
+.xcogIconlab {
+	width: 32px;
+	height: 32px;
+	background-position: -624px -96px;
+}
+.xcogIconremove {
+	width: 32px;
+	height: 32px;
+	background-position: -672px -96px;
+}
+.xcogIconbriefcase {
+	width: 32px;
+	height: 32px;
+	background-position: -720px -96px;
+}
+.xcogIconaccessibility {
+	width: 32px;
+	height: 32px;
+	background-position: 0 -144px;
+}
+.xcogIcontarget {
+	width: 32px;
+	height: 32px;
+	background-position: -48px -144px;
+}
+.xcogIconswitch {
+	width: 32px;
+	height: 32px;
+	background-position: -96px -144px;
+}
+.xcogIconpowercord {
+	width: 32px;
+	height: 32px;
+	background-position: -144px -144px;
+}
+.xcogIconmenu {
+	width: 32px;
+	height: 32px;
+	background-position: -192px -144px;
+}
+.xcogIconeye {
+	width: 32px;
+	height: 32px;
+	background-position: -240px -144px;
+}
+.xcogIconeye2 {
+	width: 32px;
+	height: 32px;
+	background-position: -288px -144px;
+}
+.xcogIconheart {
+	width: 32px;
+	height: 32px;
+	background-position: -336px -144px;
+}
+.xcogIconthumbs-up {
+	width: 32px;
+	height: 32px;
+	background-position: -384px -144px;
+}
+.xcogIconthumbs-up2 {
+	width: 32px;
+	height: 32px;
+	background-position: -432px -144px;
+}
+.xcogIconhappy {
+	width: 32px;
+	height: 32px;
+	background-position: -480px -144px;
+}
+.xcogIconsmiley {
+	width: 32px;
+	height: 32px;
+	background-position: -528px -144px;
+}
+.xcogIcontongue {
+	width: 32px;
+	height: 32px;
+	background-position: -576px -144px;
+}
+.xcogIconsad {
+	width: 32px;
+	height: 32px;
+	background-position: -624px -144px;
+}
+.xcogIconwink {
+	width: 32px;
+	height: 32px;
+	background-position: -672px -144px;
+}
+.xcogIconcool {
+	width: 32px;
+	height: 32px;
+	background-position: -720px -144px;
+}
+.xcogIconangry {
+	width: 32px;
+	height: 32px;
+	background-position: 0 -192px;
+}
+.xcogIconevil {
+	width: 32px;
+	height: 32px;
+	background-position: -48px -192px;
+}
+.xcogIconconfused {
+	width: 32px;
+	height: 32px;
+	background-position: -96px -192px;
+}
+.xcogIconneutral {
+	width: 32px;
+	height: 32px;
+	background-position: -144px -192px;
+}
+.xcogIconwondering {
+	width: 32px;
+	height: 32px;
+	background-position: -192px -192px;
+}
+.xcogIconquestion {
+	width: 32px;
+	height: 32px;
+	background-position: -240px -192px;
+}
+.xcogIconblocked {
+	width: 32px;
+	height: 32px;
+	background-position: -288px -192px;
+}
+.xcogIconcancel-circle {
+	width: 32px;
+	height: 32px;
+	background-position: -336px -192px;
+}
+.xcogIconcheckmark-circle {
+	width: 32px;
+	height: 32px;
+	background-position: -384px -192px;
+}
+.xcogIconspam {
+	width: 32px;
+	height: 32px;
+	background-position: -432px -192px;
+}
+.xcogIconclose {
+	width: 32px;
+	height: 32px;
+	background-position: -480px -192px;
+}
+.xcogIconplay2 {
+	width: 32px;
+	height: 32px;
+	background-position: -528px -192px;
+}
+.xcogIconpause {
+	width: 32px;
+	height: 32px;
+	background-position: -576px -192px;
+}
+.xcogIconstop {
+	width: 32px;
+	height: 32px;
+	background-position: -624px -192px;
+}
+.xcogIconfirst {
+	width: 32px;
+	height: 32px;
+	background-position: -672px -192px;
+}
+.xcogIconlast {
+	width: 32px;
+	height: 32px;
+	background-position: -720px -192px;
+}
+.xcogIconvolume-high {
+	width: 34px;
+	height: 32px;
+	background-position: 0 -240px;
+}
+.xcogIconshuffle {
+	width: 32px;
+	height: 32px;
+	background-position: -48px -240px;
+}
+.xcogIconfilter {
+	width: 32px;
+	height: 32px;
+	background-position: -96px -240px;
+}
+.xcogIconcode {
+	width: 32px;
+	height: 32px;
+	background-position: -144px -240px;
+}
+.xcogIconconsole {
+	width: 32px;
+	height: 32px;
+	background-position: -192px -240px;
+}
+.xcogIcongoogleplus {
+	width: 32px;
+	height: 32px;
+	background-position: -240px -240px;
+}
+.xcogIconfacebook {
+	width: 32px;
+	height: 32px;
+	background-position: -288px -240px;
+}
+.xcogIcontwitter {
+	width: 32px;
+	height: 32px;
+	background-position: -336px -240px;
+}
+.xcogIconyoutube {
+	width: 32px;
+	height: 32px;
+	background-position: -384px -240px;
+}
+.xcogIconvimeo {
+	width: 32px;
+	height: 32px;
+	background-position: -432px -240px;
+}
+.xcogIconflickr {
+	width: 32px;
+	height: 32px;
+	background-position: -480px -240px;
+}
+.xcogIcondribbble {
+	width: 32px;
+	height: 32px;
+	background-position: -528px -240px;
+}
+.xcogIcondeviantart {
+	width: 32px;
+	height: 32px;
+	background-position: -576px -240px;
+}
+.xcogIconsteam {
+	width: 32px;
+	height: 32px;
+	background-position: -624px -240px;
+}
+.xcogIcongithub {
+	width: 32px;
+	height: 32px;
+	background-position: -672px -240px;
+}
+.xcogIcongithub2 {
+	width: 32px;
+	height: 32px;
+	background-position: -720px -240px;
+}
+.xcogIcongithub22 {
+	width: 32px;
+	height: 32px;
+	background-position: 0 -288px;
+}
+.xcogIcongithub3 {
+	width: 32px;
+	height: 32px;
+	background-position: -48px -288px;
+}
+.xcogIconwordpress {
+	width: 32px;
+	height: 32px;
+	background-position: -96px -288px;
+}
+.xcogIcontux {
+	width: 32px;
+	height: 32px;
+	background-position: -144px -288px;
+}
+.xcogIconapple {
+	width: 32px;
+	height: 32px;
+	background-position: -192px -288px;
+}
+.xcogIconfinder {
+	width: 32px;
+	height: 32px;
+	background-position: -240px -288px;
+}
+.xcogIconandroid {
+	width: 32px;
+	height: 32px;
+	background-position: -288px -288px;
+}
+.xcogIconwindows {
+	width: 32px;
+	height: 32px;
+	background-position: -336px -288px;
+}
+.xcogIconsoundcloud {
+	width: 32px;
+	height: 32px;
+	background-position: -384px -288px;
+}
+.xcogIconskype {
+	width: 32px;
+	height: 32px;
+	background-position: -432px -288px;
+}
+.xcogIconreddit {
+	width: 32px;
+	height: 32px;
+	background-position: -480px -288px;
+}
+.xcogIconlinkedin {
+	width: 32px;
+	height: 32px;
+	background-position: -528px -288px;
+}
+.xcogIconstackoverflow {
+	width: 32px;
+	height: 32px;
+	background-position: -576px -288px;
+}
+.xcogIconpaypal {
+	width: 32px;
+	height: 32px;
+	background-position: -624px -288px;
+}
+.xcogIconhtml5 {
+	width: 32px;
+	height: 32px;
+	background-position: -672px -288px;
+}
+.xcogIconchrome {
+	width: 32px;
+	height: 32px;
+	background-position: -720px -288px;
+}
+.xcogIconfirefox {
+	width: 32px;
+	height: 32px;
+	background-position: 0 -336px;
+}
+.xcogIconIE {
+	width: 32px;
+	height: 32px;
+	background-position: -48px -336px;
+}
+.xcogIconopera {
+	width: 32px;
+	height: 32px;
+	background-position: -96px -336px;
+}
+.xcogIconsafari {
+	width: 32px;
+	height: 32px;
+	background-position: -144px -336px;
+}
+.xcogIconsound {
+	width: 32px;
+	height: 32px;
+	background-position: 0 -384px;
+}
+.xcogIconuser22 {
+	width: 32px;
+	height: 32px;
+	background-position: -48px -384px;
+}
+.xcogIconsettings {
+	width: 32px;
+	height: 32px;
+	background-position: -96px -384px;
+}
+.xcogIconbulb {
+	width: 32px;
+	height: 32px;
+	background-position: -144px -384px;
+}
+.xcogIconbubble22 {
+	width: 32px;
+	height: 32px;
+	background-position: -192px -384px;
+}
+.xcogIconpaperplane {
+	width: 32px;
+	height: 32px;
+	background-position: -240px -384px;
+}
+.xcogIconbanknote {
+	width: 32px;
+	height: 32px;
+	background-position: -288px -384px;
+}
+.xcogIcondata {
+	width: 32px;
+	height: 32px;
+	background-position: -336px -384px;
+}
+.xcogIconmusic2 {
+	width: 32px;
+	height: 32px;
+	background-position: -384px -384px;
+}
+.xcogIconmegaphone {
+	width: 32px;
+	height: 32px;
+	background-position: -432px -384px;
+}
+.xcogIconlab2 {
+	width: 32px;
+	height: 32px;
+	background-position: -480px -384px;
+}
+.xcogIconfire2 {
+	width: 32px;
+	height: 32px;
+	background-position: -528px -384px;
+}
+.xcogIconphone2 {
+	width: 40px;
+	height: 40px;
+	background-position: 0 -432px;
+}
+.xcogIconmobile3 {
+	width: 40px;
+	height: 40px;
+	background-position: -56px -432px;
+}
+.xcogIconpaperplane2 {
+	width: 40px;
+	height: 40px;
+	background-position: -112px -432px;
+}
+.xcogIconlocation {
+	width: 40px;
+	height: 40px;
+	background-position: -168px -432px;
+}
+.xcogIconsharable {
+	width: 40px;
+	height: 40px;
+	background-position: -224px -432px;
+}
+.xcogIconquote {
+	width: 40px;
+	height: 40px;
+	background-position: -280px -432px;
+}
+.xcogIconflashlight {
+	width: 40px;
+	height: 40px;
+	background-position: -336px -432px;
+}
+.xcogIcontools {
+	width: 40px;
+	height: 40px;
+	background-position: -392px -432px;
+}
+.xcogIconmegaphone2 {
+	width: 40px;
+	height: 40px;
+	background-position: -448px -432px;
+}
+.xcogIconthunder {
+	width: 40px;
+	height: 40px;
+	background-position: -504px -432px;
+}
+.xcogIconrss {
+	width: 40px;
+	height: 40px;
+	background-position: -560px -432px;
+}
+.xcogIconlist {
+	width: 40px;
+	height: 40px;
+	background-position: -616px -432px;
+}
+.xcogIcontrash {
+	width: 40px;
+	height: 40px;
+	background-position: -672px -432px;
+}
+.xcogIconvolume {
+	width: 40px;
+	height: 40px;
+	background-position: -728px -432px;
+}
+.xcogIconflickr2 {
+	width: 40px;
+	height: 40px;
+	background-position: -784px -432px;
+}
+.xcogIcontwitter2 {
+	width: 40px;
+	height: 40px;
+	background-position: -840px -432px;
+}
+.xcogIconfacebook2 {
+	width: 40px;
+	height: 40px;
+	background-position: 0 -488px;
+}
+.xcogIcongoogleplus2 {
+	width: 40px;
+	height: 40px;
+	background-position: -56px -488px;
+}
+.xcogIconpinterest {
+	width: 40px;
+	height: 40px;
+	background-position: -112px -488px;
+}
+.xcogIconlinkedin2 {
+	width: 40px;
+	height: 40px;
+	background-position: -168px -488px;
+}
+.xcogIcondribbble2 {
+	width: 40px;
+	height: 40px;
+	background-position: -224px -488px;
+}
+.xcogIconinstagram {
+	width: 40px;
+	height: 40px;
+	background-position: -280px -488px;
+}
+.xcogIcondropbox {
+	width: 40px;
+	height: 40px;
+	background-position: -336px -488px;
+}
+.xcogIconskype2 {
+	width: 40px;
+	height: 40px;
+	background-position: -392px -488px;
+}
+.xcogIconpaypal2 {
+	width: 40px;
+	height: 40px;
+	background-position: -448px -488px;
+}
+.xcogIconsoundcloud2 {
+	width: 40px;
+	height: 40px;
+	background-position: -504px -488px;
+}
+.xcogIconbehance {
+	width: 40px;
+	height: 40px;
+	background-position: -560px -488px;
+}

@@ -1,0 +1,54 @@
+/*
+Error: Invalid CSS after "  tr": expected "{", was "}"
+        on line 48 of /Users/robertbeatie/Desktop/Web Ops/NetX/frontend/web/xcogStyles/sass/_org-local/xcogSass.scss
+
+43:   padding: 0;
+44:   z-index: 1;
+45:   tr
+46:     
+47:     
+48: }
+49: 
+50: //end defaults
+51: 
+52: div[data-xcog="container"] {
+53: 
+
+Backtrace:
+/Users/robertbeatie/Desktop/Web Ops/NetX/frontend/web/xcogStyles/sass/_org-local/xcogSass.scss:48
+/Users/robertbeatie/.rvm/gems/ruby-2.1.5@global/gems/sass-3.4.9/lib/sass/scss/parser.rb:1165:in `expected'
+/Users/robertbeatie/.rvm/gems/ruby-2.1.5@global/gems/sass-3.4.9/lib/sass/scss/parser.rb:1101:in `expected'
+/Users/robertbeatie/.rvm/gems/ruby-2.1.5@global/gems/sass-3.4.9/lib/sass/scss/parser.rb:1096:in `tok!'
+/Users/robertbeatie/.rvm/gems/ruby-2.1.5@global/gems/sass-3.4.9/lib/sass/scss/parser.rb:641:in `block'
+/Users/robertbeatie/.rvm/gems/ruby-2.1.5@global/gems/sass-3.4.9/lib/sass/scss/parser.rb:711:in `declaration_or_ruleset'
+/Users/robertbeatie/.rvm/gems/ruby-2.1.5@global/gems/sass-3.4.9/lib/sass/scss/parser.rb:661:in `block_child'
+/Users/robertbeatie/.rvm/gems/ruby-2.1.5@global/gems/sass-3.4.9/lib/sass/scss/parser.rb:653:in `block_contents'
+/Users/robertbeatie/.rvm/gems/ruby-2.1.5@global/gems/sass-3.4.9/lib/sass/scss/parser.rb:642:in `block'
+/Users/robertbeatie/.rvm/gems/ruby-2.1.5@global/gems/sass-3.4.9/lib/sass/scss/parser.rb:635:in `ruleset'
+/Users/robertbeatie/.rvm/gems/ruby-2.1.5@global/gems/sass-3.4.9/lib/sass/scss/parser.rb:660:in `block_child'
+/Users/robertbeatie/.rvm/gems/ruby-2.1.5@global/gems/sass-3.4.9/lib/sass/scss/parser.rb:653:in `block_contents'
+/Users/robertbeatie/.rvm/gems/ruby-2.1.5@global/gems/sass-3.4.9/lib/sass/scss/parser.rb:117:in `stylesheet'
+/Users/robertbeatie/.rvm/gems/ruby-2.1.5@global/gems/sass-3.4.9/lib/sass/scss/parser.rb:42:in `parse'
+/Users/robertbeatie/.rvm/gems/ruby-2.1.5@global/gems/sass-3.4.9/lib/sass/engine.rb:393:in `_to_tree'
+/Users/robertbeatie/.rvm/gems/ruby-2.1.5@global/gems/sass-3.4.9/lib/sass/engine.rb:268:in `render'
+/Users/robertbeatie/.rvm/gems/ruby-2.1.5@global/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:17:in `block in render'
+/Users/robertbeatie/.rvm/gems/ruby-2.1.5@global/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:29:in `with_import_scope'
+/Users/robertbeatie/.rvm/gems/ruby-2.1.5@global/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:16:in `render'
+/Users/robertbeatie/.rvm/gems/ruby-2.1.5@global/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+/Users/robertbeatie/.rvm/gems/ruby-2.1.5@global/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/robertbeatie/.rvm/gems/ruby-2.1.5@global/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/robertbeatie/.rvm/gems/ruby-2.1.5@global/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/robertbeatie/.rvm/gems/ruby-2.1.5@global/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
+/Users/robertbeatie/.rvm/gems/ruby-2.1.5@global/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:328:in `block in watch'
+/Users/robertbeatie/.rvm/gems/ruby-2.1.5@global/gems/sass-3.4.9/vendor/listen/lib/listen/listener.rb:252:in `call'
+/Users/robertbeatie/.rvm/gems/ruby-2.1.5@global/gems/sass-3.4.9/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+/Users/robertbeatie/.rvm/gems/ruby-2.1.5@global/gems/sass-3.4.9/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+/Users/robertbeatie/.rvm/gems/ruby-2.1.5@global/gems/sass-3.4.9/vendor/listen/lib/listen/adapter.rb:254:in `call'
+/Users/robertbeatie/.rvm/gems/ruby-2.1.5@global/gems/sass-3.4.9/vendor/listen/lib/listen/adapter.rb:254:in `report_changes'
+/Users/robertbeatie/.rvm/gems/ruby-2.1.5@global/gems/sass-3.4.9/vendor/listen/lib/listen/adapter.rb:323:in `poll_changed_directories'
+/Users/robertbeatie/.rvm/gems/ruby-2.1.5@global/gems/sass-3.4.9/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"  tr\": expected \"{\", was \"}\"\A         on line 48 of /Users/robertbeatie/Desktop/Web Ops/NetX/frontend/web/xcogStyles/sass/_org-local/xcogSass.scss\A \A 43:   padding: 0;\A 44:   z-index: 1;\A 45:   tr\A 46:     \A 47:     \A 48: }\A 49: \A 50: //end defaults\A 51: \A 52: div[data-xcog=\"container\"] {\A 53: "; }

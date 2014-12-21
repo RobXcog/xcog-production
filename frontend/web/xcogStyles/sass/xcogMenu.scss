@@ -1,0 +1,484 @@
+//rob@xcogstudios.com 12/19/2014
+// Its a little bit of a mess in here I need to factor out my reDUHN's, my apologies for any confusion!! \m/ and my var names are atrocities and it's so not dry.. 
+
+// vars TODO: ∞ 
+
+//defaults
+$menu_width: 50%;
+
+//set up
+
+
+
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+@media screen and (min-width: 240px) {
+    html {
+        margin-left: calc(100vw - 100%);
+        margin-right: 0;
+    }
+}
+
+body::-webkit-scrollbar { 
+  /* This is the magic bit */
+  display: none;
+}
+
+body, html {
+     position: relative;
+    margin: 0;
+  padding: 0px;
+  background-color: black;
+}
+
+a { text-decoration: none;
+ 
+}
+
+
+.xcogMeWide {
+
+    background-size: contain;
+}
+
+.xcogPannel {
+    color: #373438;
+}
+
+.xcog-panelHeading {
+  
+  background-image: url("//farm8.staticflickr.com/7331/12960175804_e7a0049203_o.jpg") no-repeat center;
+  background-size:  100%;
+ height: 200px;
+  h2.panel-title{
+     font-size:32px;
+     font-family: "Times New Roman", Times, serif;
+  color:white;
+    display:block;
+    position:absolute;
+    top: 200px;
+  }
+ 
+}
+.contentWrap {
+    z-index: 50;
+}
+.content {
+    padding: 125px 20px 20px 8px; 
+}
+.xcogContent {
+    padding: 10px 15px 10px 10px;
+}
+
+//Menu Start
+// menu
+.mainMenu {
+    
+   
+    background: rgba(25, 25, 25, .5);
+    color: darkgrey;
+    position: fixed;
+    top: 0;
+   // float: left;
+    padding-top: 135px;
+    display: block;  
+    width: $menu-width;
+    opacity: 0;
+    height: 100%;
+    background: #3B3B3B;
+    overflow-y: hide;
+
+    -webkit-transition: all .6s ease-in;
+    -moz-transition: all .6s ease-in;
+    -ms-transition: all .6s ease-in;
+    -o-transition: all .6s ease-in;
+    transition: all .6s ease-in;
+
+    a {
+      
+    -webkit-transition: all .6s .2s ease-in ;
+    -moz-transition: all .6s .2s ease-in ;
+    -ms-transition: all .6s .2s ease-in ;
+    -o-transition: all .6s .2s ease-in ;
+    transition: all .6s .2s ease-in;  
+
+        display: block;
+        background: linear-gradient(#3E3E3E, #383838);
+        border-top: 1px solid #484848;
+        border-bottom: 1px solid #2E2E2E;
+        color: white;
+        padding: 15px;
+        &:hover, &:focus {
+            background: linear-gradient(#484848, #186c96);
+        }
+    }
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 34px;
+        background: linear-gradient(left, rgba(black, 0), rgba(black, 0.4));
+
+    }
+}
+
+
+#menuUl {
+
+    
+    -webkit-transition: all .6s .2s ease-in ;
+    -moz-transition: all .6s .2s ease-in ;
+    -ms-transition: all .6s .2s ease-in ;
+    -o-transition: all .6s .2s ease-in ;
+    transition: all .6s .2s ease-in;
+    a {
+       color: #7f7f7f;   
+        &:hover, &:focus {
+          color: #ff1414;
+        } 
+      &.freeze:hover, &.ignite:focus {
+        color: #19f3ff;
+      }
+      &.glow:hover, &.glow:focus {
+        color: yellow;
+      }
+      &.rejuved:hover, &.ignite:focus {
+        color: #10ff00;
+      }
+      &.potent:hover, &.rejuved:focus {
+        color: #e15eff;
+      }
+    } 
+} 
+//end menu 
+
+//header
+.main-header { 
+    z-index: 20;
+    -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzhmOTZhZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjMlIiBzdG9wLWNvbG9yPSIjM2Y0YzZiIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iOTclIiBzdG9wLWNvbG9yPSIjM2Y0YzZiIiBzdG9wLW9wYWNpdHk9IjAuOSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDMxOTQ0IiBzdG9wLW9wYWNpdHk9IjAuOSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top, rgba(143,150,173,1) 0%, rgba(63,76,107,1) 3%, rgba(63,76,107,0.9) 97%, rgba(3,25,68,0.9) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(143,150,173,1)), color-stop(3%,rgba(63,76,107,1)), color-stop(97%,rgba(63,76,107,0.9)), color-stop(100%,rgba(3,25,68,0.9)));
+    background: -webkit-linear-gradient(top, rgba(143,150,173,1) 0%,rgba(63,76,107,1) 3%,rgba(63,76,107,0.9) 97%,rgba(3,25,68,0.9) 100%);
+    background: -o-linear-gradient(top, rgba(143,150,173,1) 0%,rgba(63,76,107,1) 3%,rgba(63,76,107,0.9) 97%,rgba(3,25,68,0.9) 100%);
+    background: -ms-linear-gradient(top, rgba(143,150,173,1) 0%,rgba(63,76,107,1) 3%,rgba(63,76,107,0.9) 97%,rgba(3,25,68,0.9) 100%);
+    background: linear-gradient(to bottom, rgba(143,150,173,1) 0%,rgba(63,76,107,1) 3%,rgba(63,76,107,0.9) 97%,rgba(3,25,68,0.9) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8f96ad', endColorstr='#e6031944',GradientType=0 );
+    line-height: 1.1;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    text-shadow: #222 0px -1px 1px;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    transition: all 0.3s ease;
+    
+}
+
+//end of header
+.contentWrap {
+   position: relative;
+    z-index: 10;
+   padding: 12px;
+   padding-top: 150px;
+    float: right;
+    width: 100%;
+    transition: width 0.3s ease;
+    line-height: 1.6;
+    color: white;
+    text-align: center;
+
+    -webkit-transition: all .6s ease-in;
+    -moz-transition: all .6s ease-in;
+    -ms-transition: all .6s ease-in;
+    -o-transition: all .6s ease-in;
+    transition: all .6s ease-in;
+
+    background: #252c3f; /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzI1MmMzZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjM5JSIgc3RvcC1jb2xvcj0iIzNmNGM2YiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM1ODZmOTYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(left,  #252c3f 0%, #3f4c6b 39%, #586f96 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#252c3f), color-stop(39%,#3f4c6b), color-stop(100%,#586f96)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  #252c3f 0%,#3f4c6b 39%,#586f96 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,  #252c3f 0%,#3f4c6b 39%,#586f96 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  #252c3f 0%,#3f4c6b 39%,#586f96 100%); /* IE10+ */
+    background: linear-gradient(to right,  #252c3f 0%,#3f4c6b 39%,#586f96 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#252c3f', endColorstr='#586f96',GradientType=1 ); /* IE6-8 */
+
+    
+}
+
+// panel
+.xcogPannel {
+    -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+// end panel
+
+
+//Content View That Gets Squished
+
+
+// End of Content View That Gets Squished
+
+
+
+
+// icons
+.smilelyXcogWrapper {
+    position: relative;
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+}
+#logoCog {
+    position: relative;
+    z-index: 5;
+    color: black;
+    font-size: 160px;
+}
+.iconGrin{
+ 
+    position: relative;
+    fill: black;
+    z-index: 10;
+    top:-130px;
+    right: 80px;
+}
+.smileyCircleSVG{
+    z-index: 7;
+    position: relative;
+    right: 25px;
+    top:-310px;
+    width: 200px;
+    height: 200px;
+}
+.circleLogo{  
+    position: absolute;
+    z-index: 8;
+    fill: yellow;
+}
+.icon {
+display: inline-block;
+    fill: white;
+    height: 32px;
+    width: 32px; 
+}
+.skullSVG{
+  fill: lightgrey;
+
+    -webkit-transition: all .3s .6s ease-in;
+    -moz-transition: all .3s .6s ease-in;
+    -ms-transition: all .3s .6s ease-in;
+    -o-transition: all .3s .6s ease-in;
+    transition: all  .3s .6s ease-in;
+
+    &:hover, &:focus {
+        fill: #00f6ff;
+    }
+
+}
+// font transitions and chaos
+.SIC { 
+    top: 10px;
+    font-size: 60px; 
+    -webkit-transition: all .6s .2s ease-in ;
+    -moz-transition: all .6s .2s ease-in ;
+    -ms-transition: all .6s .2s ease-in ;
+    -o-transition: all .6s .2s ease-in ;
+    transition: all .6s .2s ease-in;
+    &:hover, &:focus {
+        color: #2aff00;
+    }
+}
+
+.xcogIgnite, .ignite, .glow, .rejuved, .freeze, .potent {
+
+    -webkit-transition: all .6s .1s ease-in ;
+    -moz-transition: all .6s .1s ease-in ;
+    -ms-transition: all .6s .1s ease-in ;
+    -o-transition: all .6s .1s ease-in ;
+    transition: all .6s .1s ease-in;
+}
+.xcogIgnite {
+    
+    &:hover{
+        
+       color:red;   
+    } 
+  
+}
+.potent {
+  
+    &:hover, &:focus {
+        fill: #ff00e1;
+    }
+}
+
+.subTitle {
+    color: lightGrey;
+    font-size: 12;
+}
+
+#idCBOX {
+    -webkit-transition: all .6s .2s ease-in ;
+    -moz-transition: all .6s .2s ease-in ;
+    -ms-transition: all .6s .2s ease-in ;
+    -o-transition: all .6s .2s ease-in ;
+    transition: all .6s .2s ease-in;
+    &:hover, &:focus {
+        color: #2aff00;
+    }
+}
+
+.CHECK {
+    -webkit-transition: all .6s .2s ease-in ;
+    -moz-transition: all .6s .2s ease-in ;
+    -ms-transition: all .6s .2s ease-in ;
+    -o-transition: all .6s .2s ease-in ;
+    transition: all .6s .2s ease-in;
+    color: grey;
+    &:hover, &:focus {
+        color: yellow;
+    }
+}
+
+.X {
+    -webkit-transition: all .6s .2s ease-in ;
+    -moz-transition: all .6s .2s ease-in ;
+    -ms-transition: all .6s .2s ease-in ;
+    -o-transition: all .6s .2s ease-in ;
+    transition: all .6s .2s ease-in;
+    &:hover, &:focus {
+        color: #2aff00;
+
+    }
+
+}
+.Xtwo {
+    -webkit-transition: all .6s .2s ease-in ;
+    -moz-transition: all .6s .2s ease-in ;
+    -ms-transition: all .6s .2s ease-in ;
+    -o-transition: all .6s .2s ease-in ;
+    transition: all .6s .2s ease-in;
+    &:hover, &:focus {
+        color: #19f3ff;
+
+    }
+}
+
+.G
+{
+    -webkit-transition: all .6s .2s ease-in ;
+    -moz-transition: all .6s .2s ease-in ;
+    -ms-transition: all .6s .2s ease-in ;
+    -o-transition: all .6s .2s ease-in ;
+    transition: all .6s .2s ease-in;
+    &:hover, &:focus {
+        color: yellow;
+    } 
+}
+.BO {
+    -webkit-transition: all .6s .2s ease-in ;
+    -moz-transition: all .6s .2s ease-in ;
+    -ms-transition: all .6s .2s ease-in ;
+    -o-transition: all .6s .2s ease-in ;
+    transition: all .6s .2s ease-in;
+    color:grey;
+    &:hover, &:focus {
+        color: #19f3ff;
+    } 
+}
+.COG{
+    -webkit-transition: all .6s .1s ease-in;
+    -moz-transition: all .6s .1s ease-in;
+    -ms-transition: all .6s .1s ease-in;
+    -o-transition: all .6s .1s ease-in;
+    transition: all .6s .1s ease-in;
+    &:hover, &:focus {
+
+        color: #f20000;
+    }
+}
+
+.HACK {
+    color: #3d3d3d;
+    font-size: 18px;
+    -webkit-transition: all .6s .2s ease-in ;
+    -moz-transition: all .6s .2s ease-in ;
+    -ms-transition: all .6s .2s ease-in ;
+    -o-transition: all .6s .2s ease-in ;
+    transition: all .6s .2s ease-in;
+    &:hover, &:focus {
+        color: #f20000;
+
+    }
+}
+
+// logic
+
+.toggleLabel {
+    font-size: 32px;
+    text-shadow: #222 0px -1px 1px;
+
+}
+
+input[type=checkbox] {
+      position: absolute;
+      top: 20px;
+      left:40px;
+      opacity:0; 
+      z-index: 50;
+}
+
+/* Toggled State */
+input[type=checkbox]:checked ~ .mainMenu {
+  opacity: 1;
+  width: 22%;
+}
+input[type=checkbox]:checked ~ #contentContainer {
+    width: 78%;
+ //  
+    
+}
+
+// logic end
+
+//helpers
+.xcogWarning{
+    z-index: 3;
+    
+}
+.xcogLineHeight {
+    line-height: .2;
+
+}
+.xcogNowrap{
+    white-space: nowrap;
+}
+
+.xcogBannerRob {
+   
+  background-image: url("//farm8.staticflickr.com/7331/12960175804_e7a0049203_o.jpg") no-repeat center;
+  background-size:  100%;
+ height: 200px;
+  h2.panel-title{
+     font-size:32px;
+     font-family: "Times New Roman", Times, serif;
+    color:white;
+    display:block;
+    position:absolute;
+    top: 200px;
+   }
+}

@@ -40,7 +40,7 @@ class XcogController extends Controller
     /**
      * @global array $variable
      */
-    
+    public $layout ='@app/views/layouts/dashboard';
     
     /**
      * @inheritdoc
@@ -48,6 +48,7 @@ class XcogController extends Controller
     public function behaviors()
     {
         return [
+           
             'access' => [
                 'class' => AccessControl::className(),
                 'only' => ['logout', 'signup'],
@@ -89,6 +90,12 @@ class XcogController extends Controller
             ],
         ];
     }
+    public function actionBlog()
+    {
+        
+        return $this->render('blog');
+    }
+
     public function actionResume()
     {
 $model = new ContactForm();

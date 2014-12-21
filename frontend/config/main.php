@@ -32,12 +32,7 @@ return [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
-        'view' => [
-             'theme' => [
-                 'pathMap' => ['@app/views' => '@app/themes/xcog'],
-                 'baseUrl' => '@app/views/themes/xcog',
-            ],
-        ],
+     
         'urlManager' => [
             'enablePrettyUrl' => true,
             'rules' => [
@@ -49,6 +44,8 @@ return [
                 'yarradio' => 'xcog/yarr',
                 'robxcog' => 'xcog/robxcog',
                 'robxcog/resume' => 'xcog/robxcog/resume',
+                'xcog/music' => 'xcog/yarr',
+                'xcog/jobs/jobboard' => 'site/contact'
             ],
         ],   
     ],

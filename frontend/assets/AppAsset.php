@@ -18,16 +18,17 @@ class AppAsset extends AssetBundle
     public $basePath = '@webroot';
     public $baseUrl = '@web';
     public $css = [
-        'css/offCanvasStyle.css',
-        'css/xcogStyle.css',
-        '//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css',
+        'xcogStyles/stylesheets/print.css',
+        'xcogStyles/stylesheets/screen.css',
+        'xcogStyles/stylesheets/styles.css',
+        'xcogStyles/stylesheets/xcogMenu.css',
         '//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css',
     ];
     public $js = [
-        '//code.jquery.com/jquery-1.11.0.min.js',
-        '//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js',
-        '//code.jquery.com/jquery-migrate-1.2.1.min.js',
-       // '//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js',
+        '../xcogstyles/javascripts/jquery1.11.js',
+        '../xcogstyles/javascripts/bootstrap.js',
+        '../xcogstyles/javascripts/xcogRX.js',
+        '../xcogstyles/javascripts/bootstrap-sprockets.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',

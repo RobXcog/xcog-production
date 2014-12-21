@@ -11,10 +11,12 @@ $this->title = 'Contact';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="site-contact">
-    <h1><?= Html::encode($this->title) ?></h1>
+    <h1 class="fa-border pull-left SIC"><?= Html::encode($this->title) ?></h1>
 
     <p>
-        If you have business inquiries or other questions, please fill out the following form to contact us. Thank you.
+        The Xcog Network is constantly evolving to achieve it's goals and we are open to all manners of contribution. As a community driven organization, we run on  <a href="/donations"> donations </a> and every cent helps but we hope to provide services always with out it "needing" to cost a cent.
+    <br>
+    If you would like to work with us or hire our services or specialties please contact us at <a href="mailto:contact@xcogstudios.com"><i class="fa fa-paper-plane-o fa-lg"></i> | Contact@xcogstudios.com  </a>. Thank you.
     </p>
 
     <div class="row">

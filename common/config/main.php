@@ -4,8 +4,7 @@ return [
     'components' => [
         'cache' => [
             'class' => 'yii\caching\FileCache',
-            
         ],
-        
+        'layout' => '@app\views\layouts\dashboard.php',
     ],
 ];

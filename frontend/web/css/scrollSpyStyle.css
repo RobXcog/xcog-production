@@ -29,9 +29,14 @@ limitations under the License.
 }
 
 .affix{
- height: 220px;
+ height: fit-content;
 }
 
+#main-nav:target + .page-wrap .affix {
+  position: relative;
+  right: 20%;
+  
+}
 
 /* custom - http://www.tutorialrepublic.com/codelab.php?topic=bootstrap&file=scrollspy */
 ul.nav-tabs {
@@ -65,5 +70,5 @@ ul.nav-tabs li:last-child a {
 	border-radius: 0 0 4px 4px;
 }
 ul.nav-tabs.affix {
-	top: 60px; /* Set the top position of pinned element */
+	top: 120px; /* Set the top position of pinned element */
 }
