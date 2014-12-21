@@ -95,7 +95,7 @@ $background = '<p>Nam eget purus nec est consectetur vehicula. Nullam ultrices n
 </div> <!-- Dev Vars -->
 
 <!-- Content -->
-<div class="container">  
+<div class="xcog-resume">  
                 <div class="row">
                     <div class="col-sm-2"> 
                         <image src="../../images/jpg/robLovesForbes.jpg" alt="My pretty picture" class="img-rounded">
@@ -123,8 +123,7 @@ $background = '<p>Nam eget purus nec est consectetur vehicula. Nullam ultrices n
                     </span>
                         </br>
                 </div>
-    <div id="section-1"></div>
-                <div class="">
+                
                     <div class="" id="myScrollspy">
                         <ul class="nav nav-pills nav-tabs nav-pills affix-top" data-spy="affix" data-offset-top="320">
                             <li class="active"><a href="#section-1"> Introduction</a></li>
@@ -136,22 +135,17 @@ $background = '<p>Nam eget purus nec est consectetur vehicula. Nullam ultrices n
                     </div>
                     <div class="row">
                         <div id="section-1"></div>
-                         <span class="col-xs-8 col-xs-offset-4">
-                        <div class="">
-                            <div class="">
+                   
                            
                                    
                              
                                 <h1  class="" > <i class="fa fa-comment-o fa-3x pull-left"></i>  <?= $introductionHeader ?></h1> 
-                             </div>
-                            <div class="panel-body">
+                          
 
-                                <div class="row">
-                                  
-                                    
-                                </div>
 
-                                <div class="row">
+                               
+
+                                
                                     <div class="smilelyXcogWrapper ">
                 
                    <i class="fa fa-cog fa-spin" id="logoCog" ></i>
@@ -162,105 +156,56 @@ $background = '<p>Nam eget purus nec est consectetur vehicula. Nullam ultrices n
                     <svg class="smileyCircleSVG">
 <circle class="circleLogo" cx="100" cy="110" r="67" />
 </svg>
-                </div>
-                                </div>
-                                <div class="row">
+                    </div>
+                                
                   <?= $introBody ?>
                                     
                                     <div id="section-2"></div>
-                                </div>
+                          
 
                                 
-                                
-                            </div>
-                            
-                        </div> 
-                        </span>   
-                  <div class=""></div> <!-- clearfix -->
-                  
-                  
-                              <span class="">
-                        <div class="">
-                            <div class="">
+                   
                                 
                                 <h1  class=""><i class="fa fa-code fa-3x pull-right fa-border xcogIgnite"></i> My Web Stuff</h1>
-                             </div>
-                            
-                            <div class="">
-        <?= $toolbox ?>
+                          
+        
                                 
-                                <div id="section-3"  data-offset='200'></div>
-                            </div>
-                            
-                        </div> 
-                        </span> 
-                              <span class="col-xs-8 col-xs-offset-4">
-                        <div class=" ">
-                            <div class="">
+                                <div id="section-3"  data-offset='200'><?= $toolbox ?></div>
+                  
                                
                                 <h1 class="" ><i class="fa fa-border fa-wrench fa-3x pull-left SIC"> </i> Technical Toolbox</h1>
-                             </div>
-                            <div class="">
+         
  
         <?= $portfolio ?>
                                 
                                 <div id="section-4"></div>
 
-                            </div>
+                     
                             
-                        </div> 
-                        </span>   
-                  <div class=""></div> <!-- clearfix -->
-                        <span class="">
-                        <div class="">
-                            <div class="">
                                
-                                <h1  class=""><i class=""></i> Artistic Pallet</h1>
-                             </div>
-                            <div class="">
+                                <h1  class=""> Artistic Pallet</h1>
+                        
 
              
                                                 <?= $pallet ?>
                                 
                                 
-                                <div id=""></div>
+                               
 
-
-                            </div>
-                            
-                        </div> 
-                        </span>   
-                 
-                  <div class="clearfix visible-xs-block"></div> <!-- clearfix -->
                         
-                  <span class="col-xs-8 col-xs-offset-4">
-                        <div class="panel panel-info">
-                            <div class="panel-heading">
+                 
                                 
-                                <h2  class="panel-title" ><i class="fa fa-music fa-3x pull-left"></i>Musical Notes</h2>
-                             </div>
-                            <div class="panel-body">
+                                <h2  class="" ><i class="fa fa-music fa-3x pull-left"></i>Musical Notes</h2>
+                          
                        
         <?= $background ?>
-                            </div>
-                            
-                        </div> 
-                        </span>   
-                  <div class="clearfix visible-xs-block"></div> <!-- clearfix -->
-                  
-                                      </div> <!-- row -->
-
                     
+               
                     
-                    <div class="col-xs-7">
-                       
-                       
-          
-                    
-                     
-                    </div>
-                </div>
+      
+               
             </div>
+</div>
 
 
 <!-- end Content -->

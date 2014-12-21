@@ -244,11 +244,12 @@ a {
 /* line 255, ../sass/xcogMenu.scss */
 .logoCol {
   max-height: 200px;
+  min-height: 200px;
 }
 
 /* line 260, ../sass/xcogMenu.scss */
 .logoRow {
-  max-height: 100px;
+  max-height: 150px;
 }
 
 /* line 264, ../sass/xcogMenu.scss */
@@ -548,4 +549,16 @@ input[type=checkbox]:checked ~ #contentContainer {
   font-size: 24px;
   font-family: "Times New Roman", Times, serif;
   color: grey;
+}
+
+/* line 552, ../sass/xcogMenu.scss */
+.xcog-resume {
+  display: inline-block;
+  line-height: 1.1;
+  padding: 5px;
+  padding-left: 50px;
+  text-align: center;
+  color: white;
+  text-shadow: #222 0px -1px 1px;
+  position: realtive;
 }

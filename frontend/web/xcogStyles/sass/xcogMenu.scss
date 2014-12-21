@@ -254,12 +254,12 @@ a { text-decoration: none;
 // icons
 .logoCol{
     max-height: 200px;
-    
+    min-height: 200px;
 }
 
 .logoRow{
     
-    max-height: 100px;
+    max-height: 150px;
 }
 .smilelyXcogWrapper {
     position: relative;
@@ -546,3 +546,19 @@ input[type=checkbox]:checked ~ #contentContainer {
     
     
 }
+
+//Resume
+
+.xcog-resume {
+    display: inline-block;
+
+        line-height: 1.1;
+    padding: 5px;
+    padding-left: 50px;
+    text-align: center;
+    color: white;
+    text-shadow: #222 0px -1px 1px;
+    position: realtive;
+    
+}
+    
