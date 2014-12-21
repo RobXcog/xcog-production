@@ -9,7 +9,6 @@ $menu_width: 50%;
 //set up
 
 
-
 * {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -233,9 +232,35 @@ a { text-decoration: none;
 // End of Content View That Gets Squished
 
 
+.footerWraper {
+    
+    min-height: 350px;
+    text-shadow: #222 0px -1px 1px;
 
+    a{
+        color: greenyellow;
+        &:hover{
+            text-decoration: none;
+            color: lightskyblue;
+        }
+    }
+    .footerBrand{
+
+        font-size:32px;
+     font-family: "Times New Roman", Times, serif;
+    }
+}
 
 // icons
+.logoCol{
+    max-height: 200px;
+    
+}
+
+.logoRow{
+    
+    max-height: 100px;
+}
 .smilelyXcogWrapper {
     position: relative;
     display: inline-block;
@@ -247,6 +272,15 @@ a { text-decoration: none;
     z-index: 5;
     color: black;
     font-size: 160px;
+}
+
+.iconEvil{
+    position: relative;
+    fill: black;
+    z-index: 10;
+    top:-127px;
+    right: 80px;
+    
 }
 .iconGrin{
  
@@ -260,14 +294,14 @@ a { text-decoration: none;
     z-index: 7;
     position: relative;
     right: 25px;
-    top:-310px;
+    top:-316px;
     width: 200px;
     height: 200px;
 }
 .circleLogo{  
     position: absolute;
     z-index: 8;
-    fill: yellow;
+    fill: #faff00;
 }
 .icon {
 display: inline-block;
@@ -275,6 +309,13 @@ display: inline-block;
     height: 32px;
     width: 32px; 
 }
+.icon-o {
+display: inline-block;
+    fill: darkgrey;
+    height: 32px;
+    width: 32px; 
+}
+
 .skullSVG{
   fill: lightgrey;
 
@@ -310,6 +351,12 @@ display: inline-block;
     -ms-transition: all .6s .1s ease-in ;
     -o-transition: all .6s .1s ease-in ;
     transition: all .6s .1s ease-in;
+}
+.biohazard {
+    
+   font-size: 84px;
+    
+    
 }
 .xcogIgnite {
     
@@ -481,4 +528,21 @@ input[type=checkbox]:checked ~ #contentContainer {
     position:absolute;
     top: 200px;
    }
+}
+
+
+//index styles
+
+.site-index{
+     font-size:24px;
+     font-family: "Times New Roman", Times, serif;
+    color:grey;
+    
+}
+
+//YarRadio
+
+.xcog-yarr {
+    
+    
 }

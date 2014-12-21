@@ -1,23 +1,23 @@
-/* line 13, ../sass/xcogMenu.scss */
+/* line 12, ../sass/xcogMenu.scss */
 * {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
 }
 
 @media screen and (min-width: 240px) {
-  /* line 19, ../sass/xcogMenu.scss */
+  /* line 18, ../sass/xcogMenu.scss */
   html {
     margin-left: calc(100vw - 100%);
     margin-right: 0;
   }
 }
-/* line 25, ../sass/xcogMenu.scss */
+/* line 24, ../sass/xcogMenu.scss */
 body::-webkit-scrollbar {
   /* This is the magic bit */
   display: none;
 }
 
-/* line 30, ../sass/xcogMenu.scss */
+/* line 29, ../sass/xcogMenu.scss */
 body, html {
   position: relative;
   margin: 0;
@@ -25,28 +25,28 @@ body, html {
   background-color: black;
 }
 
-/* line 37, ../sass/xcogMenu.scss */
+/* line 36, ../sass/xcogMenu.scss */
 a {
   text-decoration: none;
 }
 
-/* line 42, ../sass/xcogMenu.scss */
+/* line 41, ../sass/xcogMenu.scss */
 .xcogMeWide {
   background-size: contain;
 }
 
-/* line 47, ../sass/xcogMenu.scss */
+/* line 46, ../sass/xcogMenu.scss */
 .xcogPannel {
   color: #373438;
 }
 
-/* line 51, ../sass/xcogMenu.scss */
+/* line 50, ../sass/xcogMenu.scss */
 .xcog-panelHeading {
   background-image: url("//farm8.staticflickr.com/7331/12960175804_e7a0049203_o.jpg") no-repeat center;
   background-size: 100%;
   height: 200px;
 }
-/* line 56, ../sass/xcogMenu.scss */
+/* line 55, ../sass/xcogMenu.scss */
 .xcog-panelHeading h2.panel-title {
   font-size: 32px;
   font-family: "Times New Roman", Times, serif;
@@ -56,22 +56,22 @@ a {
   top: 200px;
 }
 
-/* line 66, ../sass/xcogMenu.scss */
+/* line 65, ../sass/xcogMenu.scss */
 .contentWrap {
   z-index: 50;
 }
 
-/* line 69, ../sass/xcogMenu.scss */
+/* line 68, ../sass/xcogMenu.scss */
 .content {
   padding: 125px 20px 20px 8px;
 }
 
-/* line 72, ../sass/xcogMenu.scss */
+/* line 71, ../sass/xcogMenu.scss */
 .xcogContent {
   padding: 10px 15px 10px 10px;
 }
 
-/* line 78, ../sass/xcogMenu.scss */
+/* line 77, ../sass/xcogMenu.scss */
 .mainMenu {
   background: rgba(25, 25, 25, 0.5);
   color: darkgrey;
@@ -90,7 +90,7 @@ a {
   -o-transition: all .6s ease-in;
   transition: all .6s ease-in;
 }
-/* line 100, ../sass/xcogMenu.scss */
+/* line 99, ../sass/xcogMenu.scss */
 .mainMenu a {
   -webkit-transition: all 0.6s 0.2s ease-in;
   -moz-transition: all 0.6s 0.2s ease-in;
@@ -104,11 +104,11 @@ a {
   color: white;
   padding: 15px;
 }
-/* line 114, ../sass/xcogMenu.scss */
+/* line 113, ../sass/xcogMenu.scss */
 .mainMenu a:hover, .mainMenu a:focus {
   background: linear-gradient(#484848, #186c96);
 }
-/* line 118, ../sass/xcogMenu.scss */
+/* line 117, ../sass/xcogMenu.scss */
 .mainMenu:after {
   content: "";
   position: absolute;
@@ -119,7 +119,7 @@ a {
   background: linear-gradient(left, transparent, rgba(0, 0, 0, 0.4));
 }
 
-/* line 131, ../sass/xcogMenu.scss */
+/* line 130, ../sass/xcogMenu.scss */
 #menuUl {
   -webkit-transition: all 0.6s 0.2s ease-in;
   -moz-transition: all 0.6s 0.2s ease-in;
@@ -127,32 +127,32 @@ a {
   -o-transition: all 0.6s 0.2s ease-in;
   transition: all .6s .2s ease-in;
 }
-/* line 139, ../sass/xcogMenu.scss */
+/* line 138, ../sass/xcogMenu.scss */
 #menuUl a {
   color: #7f7f7f;
 }
-/* line 141, ../sass/xcogMenu.scss */
+/* line 140, ../sass/xcogMenu.scss */
 #menuUl a:hover, #menuUl a:focus {
   color: #ff1414;
 }
-/* line 144, ../sass/xcogMenu.scss */
+/* line 143, ../sass/xcogMenu.scss */
 #menuUl a.freeze:hover, #menuUl a.ignite:focus {
   color: #19f3ff;
 }
-/* line 147, ../sass/xcogMenu.scss */
+/* line 146, ../sass/xcogMenu.scss */
 #menuUl a.glow:hover, #menuUl a.glow:focus {
   color: yellow;
 }
-/* line 150, ../sass/xcogMenu.scss */
+/* line 149, ../sass/xcogMenu.scss */
 #menuUl a.rejuved:hover, #menuUl a.ignite:focus {
   color: #10ff00;
 }
-/* line 153, ../sass/xcogMenu.scss */
+/* line 152, ../sass/xcogMenu.scss */
 #menuUl a.potent:hover, #menuUl a.rejuved:focus {
   color: #e15eff;
 }
 
-/* line 161, ../sass/xcogMenu.scss */
+/* line 160, ../sass/xcogMenu.scss */
 .main-header {
   z-index: 20;
   -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
@@ -177,7 +177,7 @@ a {
   transition: all 0.3s ease;
 }
 
-/* line 187, ../sass/xcogMenu.scss */
+/* line 186, ../sass/xcogMenu.scss */
 .contentWrap {
   position: relative;
   z-index: 10;
@@ -214,14 +214,44 @@ a {
   /* IE6-8 */
 }
 
-/* line 220, ../sass/xcogMenu.scss */
+/* line 219, ../sass/xcogMenu.scss */
 .xcogPannel {
   -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
-/* line 239, ../sass/xcogMenu.scss */
+/* line 235, ../sass/xcogMenu.scss */
+.footerWraper {
+  min-height: 350px;
+  text-shadow: #222 0px -1px 1px;
+}
+/* line 240, ../sass/xcogMenu.scss */
+.footerWraper a {
+  color: greenyellow;
+}
+/* line 242, ../sass/xcogMenu.scss */
+.footerWraper a:hover {
+  text-decoration: none;
+  color: lightskyblue;
+}
+/* line 247, ../sass/xcogMenu.scss */
+.footerWraper .footerBrand {
+  font-size: 32px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* line 255, ../sass/xcogMenu.scss */
+.logoCol {
+  max-height: 200px;
+}
+
+/* line 260, ../sass/xcogMenu.scss */
+.logoRow {
+  max-height: 100px;
+}
+
+/* line 264, ../sass/xcogMenu.scss */
 .smilelyXcogWrapper {
   position: relative;
   display: inline-block;
@@ -229,7 +259,7 @@ a {
   width: 100px;
 }
 
-/* line 245, ../sass/xcogMenu.scss */
+/* line 270, ../sass/xcogMenu.scss */
 #logoCog {
   position: relative;
   z-index: 5;
@@ -237,7 +267,16 @@ a {
   font-size: 160px;
 }
 
-/* line 251, ../sass/xcogMenu.scss */
+/* line 277, ../sass/xcogMenu.scss */
+.iconEvil {
+  position: relative;
+  fill: black;
+  z-index: 10;
+  top: -127px;
+  right: 80px;
+}
+
+/* line 285, ../sass/xcogMenu.scss */
 .iconGrin {
   position: relative;
   fill: black;
@@ -246,24 +285,24 @@ a {
   right: 80px;
 }
 
-/* line 259, ../sass/xcogMenu.scss */
+/* line 293, ../sass/xcogMenu.scss */
 .smileyCircleSVG {
   z-index: 7;
   position: relative;
   right: 25px;
-  top: -310px;
+  top: -316px;
   width: 200px;
   height: 200px;
 }
 
-/* line 267, ../sass/xcogMenu.scss */
+/* line 301, ../sass/xcogMenu.scss */
 .circleLogo {
   position: absolute;
   z-index: 8;
-  fill: yellow;
+  fill: #faff00;
 }
 
-/* line 272, ../sass/xcogMenu.scss */
+/* line 306, ../sass/xcogMenu.scss */
 .icon {
   display: inline-block;
   fill: white;
@@ -271,7 +310,15 @@ a {
   width: 32px;
 }
 
-/* line 278, ../sass/xcogMenu.scss */
+/* line 312, ../sass/xcogMenu.scss */
+.icon-o {
+  display: inline-block;
+  fill: darkgrey;
+  height: 32px;
+  width: 32px;
+}
+
+/* line 319, ../sass/xcogMenu.scss */
 .skullSVG {
   fill: lightgrey;
   -webkit-transition: all .3s .6s ease-in;
@@ -280,12 +327,12 @@ a {
   -o-transition: all .3s .6s ease-in;
   transition: all  .3s .6s ease-in;
 }
-/* line 287, ../sass/xcogMenu.scss */
+/* line 328, ../sass/xcogMenu.scss */
 .skullSVG:hover, .skullSVG:focus {
   fill: #00f6ff;
 }
 
-/* line 293, ../sass/xcogMenu.scss */
+/* line 334, ../sass/xcogMenu.scss */
 .SIC {
   top: 10px;
   font-size: 60px;
@@ -295,12 +342,12 @@ a {
   -o-transition: all 0.6s 0.2s ease-in;
   transition: all .6s .2s ease-in;
 }
-/* line 301, ../sass/xcogMenu.scss */
+/* line 342, ../sass/xcogMenu.scss */
 .SIC:hover, .SIC:focus {
   color: #2aff00;
 }
 
-/* line 306, ../sass/xcogMenu.scss */
+/* line 347, ../sass/xcogMenu.scss */
 .xcogIgnite, .ignite, .glow, .rejuved, .freeze, .potent {
   -webkit-transition: all 0.6s 0.1s ease-in;
   -moz-transition: all 0.6s 0.1s ease-in;
@@ -309,23 +356,28 @@ a {
   transition: all .6s .1s ease-in;
 }
 
-/* line 316, ../sass/xcogMenu.scss */
+/* line 355, ../sass/xcogMenu.scss */
+.biohazard {
+  font-size: 84px;
+}
+
+/* line 363, ../sass/xcogMenu.scss */
 .xcogIgnite:hover {
   color: red;
 }
 
-/* line 324, ../sass/xcogMenu.scss */
+/* line 371, ../sass/xcogMenu.scss */
 .potent:hover, .potent:focus {
   fill: #ff00e1;
 }
 
-/* line 329, ../sass/xcogMenu.scss */
+/* line 376, ../sass/xcogMenu.scss */
 .subTitle {
   color: lightGrey;
   font-size: 12;
 }
 
-/* line 334, ../sass/xcogMenu.scss */
+/* line 381, ../sass/xcogMenu.scss */
 #idCBOX {
   -webkit-transition: all 0.6s 0.2s ease-in;
   -moz-transition: all 0.6s 0.2s ease-in;
@@ -333,12 +385,12 @@ a {
   -o-transition: all 0.6s 0.2s ease-in;
   transition: all .6s .2s ease-in;
 }
-/* line 340, ../sass/xcogMenu.scss */
+/* line 387, ../sass/xcogMenu.scss */
 #idCBOX:hover, #idCBOX:focus {
   color: #2aff00;
 }
 
-/* line 345, ../sass/xcogMenu.scss */
+/* line 392, ../sass/xcogMenu.scss */
 .CHECK {
   -webkit-transition: all 0.6s 0.2s ease-in;
   -moz-transition: all 0.6s 0.2s ease-in;
@@ -347,12 +399,12 @@ a {
   transition: all .6s .2s ease-in;
   color: grey;
 }
-/* line 352, ../sass/xcogMenu.scss */
+/* line 399, ../sass/xcogMenu.scss */
 .CHECK:hover, .CHECK:focus {
   color: yellow;
 }
 
-/* line 357, ../sass/xcogMenu.scss */
+/* line 404, ../sass/xcogMenu.scss */
 .X {
   -webkit-transition: all 0.6s 0.2s ease-in;
   -moz-transition: all 0.6s 0.2s ease-in;
@@ -360,12 +412,12 @@ a {
   -o-transition: all 0.6s 0.2s ease-in;
   transition: all .6s .2s ease-in;
 }
-/* line 363, ../sass/xcogMenu.scss */
+/* line 410, ../sass/xcogMenu.scss */
 .X:hover, .X:focus {
   color: #2aff00;
 }
 
-/* line 369, ../sass/xcogMenu.scss */
+/* line 416, ../sass/xcogMenu.scss */
 .Xtwo {
   -webkit-transition: all 0.6s 0.2s ease-in;
   -moz-transition: all 0.6s 0.2s ease-in;
@@ -373,12 +425,12 @@ a {
   -o-transition: all 0.6s 0.2s ease-in;
   transition: all .6s .2s ease-in;
 }
-/* line 375, ../sass/xcogMenu.scss */
+/* line 422, ../sass/xcogMenu.scss */
 .Xtwo:hover, .Xtwo:focus {
   color: #19f3ff;
 }
 
-/* line 381, ../sass/xcogMenu.scss */
+/* line 428, ../sass/xcogMenu.scss */
 .G {
   -webkit-transition: all 0.6s 0.2s ease-in;
   -moz-transition: all 0.6s 0.2s ease-in;
@@ -386,12 +438,12 @@ a {
   -o-transition: all 0.6s 0.2s ease-in;
   transition: all .6s .2s ease-in;
 }
-/* line 388, ../sass/xcogMenu.scss */
+/* line 435, ../sass/xcogMenu.scss */
 .G:hover, .G:focus {
   color: yellow;
 }
 
-/* line 392, ../sass/xcogMenu.scss */
+/* line 439, ../sass/xcogMenu.scss */
 .BO {
   -webkit-transition: all 0.6s 0.2s ease-in;
   -moz-transition: all 0.6s 0.2s ease-in;
@@ -400,12 +452,12 @@ a {
   transition: all .6s .2s ease-in;
   color: grey;
 }
-/* line 399, ../sass/xcogMenu.scss */
+/* line 446, ../sass/xcogMenu.scss */
 .BO:hover, .BO:focus {
   color: #19f3ff;
 }
 
-/* line 403, ../sass/xcogMenu.scss */
+/* line 450, ../sass/xcogMenu.scss */
 .COG {
   -webkit-transition: all .6s .1s ease-in;
   -moz-transition: all .6s .1s ease-in;
@@ -413,12 +465,12 @@ a {
   -o-transition: all .6s .1s ease-in;
   transition: all .6s .1s ease-in;
 }
-/* line 409, ../sass/xcogMenu.scss */
+/* line 456, ../sass/xcogMenu.scss */
 .COG:hover, .COG:focus {
   color: #f20000;
 }
 
-/* line 415, ../sass/xcogMenu.scss */
+/* line 462, ../sass/xcogMenu.scss */
 .HACK {
   color: #3d3d3d;
   font-size: 18px;
@@ -428,18 +480,18 @@ a {
   -o-transition: all 0.6s 0.2s ease-in;
   transition: all .6s .2s ease-in;
 }
-/* line 423, ../sass/xcogMenu.scss */
+/* line 470, ../sass/xcogMenu.scss */
 .HACK:hover, .HACK:focus {
   color: #f20000;
 }
 
-/* line 431, ../sass/xcogMenu.scss */
+/* line 478, ../sass/xcogMenu.scss */
 .toggleLabel {
   font-size: 32px;
   text-shadow: #222 0px -1px 1px;
 }
 
-/* line 437, ../sass/xcogMenu.scss */
+/* line 484, ../sass/xcogMenu.scss */
 input[type=checkbox] {
   position: absolute;
   top: 20px;
@@ -449,39 +501,39 @@ input[type=checkbox] {
 }
 
 /* Toggled State */
-/* line 446, ../sass/xcogMenu.scss */
+/* line 493, ../sass/xcogMenu.scss */
 input[type=checkbox]:checked ~ .mainMenu {
   opacity: 1;
   width: 22%;
 }
 
-/* line 450, ../sass/xcogMenu.scss */
+/* line 497, ../sass/xcogMenu.scss */
 input[type=checkbox]:checked ~ #contentContainer {
   width: 78%;
 }
 
-/* line 459, ../sass/xcogMenu.scss */
+/* line 506, ../sass/xcogMenu.scss */
 .xcogWarning {
   z-index: 3;
 }
 
-/* line 463, ../sass/xcogMenu.scss */
+/* line 510, ../sass/xcogMenu.scss */
 .xcogLineHeight {
   line-height: .2;
 }
 
-/* line 467, ../sass/xcogMenu.scss */
+/* line 514, ../sass/xcogMenu.scss */
 .xcogNowrap {
   white-space: nowrap;
 }
 
-/* line 471, ../sass/xcogMenu.scss */
+/* line 518, ../sass/xcogMenu.scss */
 .xcogBannerRob {
   background-image: url("//farm8.staticflickr.com/7331/12960175804_e7a0049203_o.jpg") no-repeat center;
   background-size: 100%;
   height: 200px;
 }
-/* line 476, ../sass/xcogMenu.scss */
+/* line 523, ../sass/xcogMenu.scss */
 .xcogBannerRob h2.panel-title {
   font-size: 32px;
   font-family: "Times New Roman", Times, serif;
@@ -489,4 +541,11 @@ input[type=checkbox]:checked ~ #contentContainer {
   display: block;
   position: absolute;
   top: 200px;
+}
+
+/* line 536, ../sass/xcogMenu.scss */
+.site-index {
+  font-size: 24px;
+  font-family: "Times New Roman", Times, serif;
+  color: grey;
 }

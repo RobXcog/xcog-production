@@ -110,8 +110,7 @@ $sponser_options = '';
         </label>
         <h2 class="pull-left xcogLineHeight">
 
-           <span class="SIC"
-                 data-toggle="popover" title="XCOG Designs by Rob Xcog" data-content="And here's some amazing content. It's very engaging. Right?">X C<span class="xcogIgnite">☣</span>G</span>
+           <span class="SIC" data-toggle="popover" title="XCOG Designs by Rob Xcog" data-content="And here's some amazing content. It's very engaging. Right?">X C<span class="xcogIgnite biohazard">☣</span>G</span>
          
             <hr>       
             <small>
@@ -138,11 +137,11 @@ $sponser_options = '';
         <?= $content ?>
 
         <footer>
-
+            <div class="footerWraper">
             <hr>
 
-            Presented by X C<span class="SIC">☣</span> G 2014 - Your attention is appreciated. <?= \yii\helpers\Html::a($sponser_message, $sponser_url, $sponser_options) ?>
-
+            Presented by<span class="footerBrand"> X C </span><span class="SIC">☣</span><span class="footerBrand"> G  </span><strong>2014</strong> - Your attention is appreciated. <?= \yii\helpers\Html::a($sponser_message, $sponser_url, $sponser_options) ?>
+            </div>
         </footer>
 <?=            \yii\helpers\Html::cssFile('../../images/svgDefs.svg') ?>
        <!-- svg container-->
