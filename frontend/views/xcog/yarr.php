@@ -24,17 +24,17 @@ echo Html::jsFile('../js/soundManager2JS.js');
 echo Html::jsFile('../js/bar-ui.js');
 
 
-$this->title = 'YarRadio!';
+$this->title = 'YarRadi☺!';
 ?>
 
 
 <div class="xcog-yarr">
     <div class="jumbotron-carousel text-center">
         
-        <h1>YarRadio! It's about making waves. </h1>
+        <h1>YarRadi☺! It's about making waves. </h1>
         
         <p class="lead">
-            YarRadio! Music from the Underground. 
+            YarRadi☺! Music from the Underground. 
         </p>
         
         

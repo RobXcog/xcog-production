@@ -15,7 +15,7 @@ color:black;
     <div class="jumbotron-index">
     <h1><?= Html::encode($this->title) ?></h1>
     </div>
-    <span class="col-xs-12 col-sm-6 col-m-3">
+    <span class="col-xs-12 col-sm-6 col-m-5">
                         <div class="panel panel-warning">
                             <div class="panel-heading">
                            
@@ -27,11 +27,12 @@ color:black;
                             <div class="panel-body">
 
                                 <p>
-                                    The always enviornment minded Xcog team is committed to developing projects that positively affects Portland's communities and economy.<hr>
-                                   We want to provide paths which protect and foster achievement in individuals to fufill their potentials for their passions. Experience is given through conntribution and contributions will involve activities in essence of beautification, education and    to  the benevolent projects we manifest. Our projects aim to give Portland every advantage our combined talents and art can grant. Xcog's scientific approach to art alows us to share valuable insight with everyone in hopes to give everyone that giant shoulder they can jump foreward into the future from. Xcog hopes to provide value in win win situations for all intents, service will keep us growing and our art keep us free.  our i the personal lives and local businesses will give an advantageousous resource and platform for us to understand a ubiquitous market. Xcog Design Lab will provide lowest cost possible design and technology services to local businesses, civic organizations and residential communities through activities and community service projects that will share a common goal of making Portland look how Portland wants to look. Awesome.
+                                    The always green Xcog team is committed to developing and deploying community driven projects that positively impact Portland's economy and people.<hr>
+                                We want to provide paths which protect and foster achievement in individuals to fulfill their potentials for their passions. Experience is given through contribution and contributions will involve activities in essence of beautification, education and    to  the benevolent projects we manifest. Our projects aim to give Portland every advantage our combined talents and art can grant. Xcog prefers scientific approaches to art so it may allow us to share valuable insight with all or any. The intent is to give support and clarity to upcoming artists and talent to give the proverbial <strong>giant's shoulder</strong> a person of passion can launch from.
+                                <br> Xcog Design Lab will provide a <strong> lowest cost possible </strong> digital design and technology mentorship to local businesses, civic organizations and residential communities through activities and community service projects that will share a common goal of making Portland look fan-fucking-tastic and always weird. 
                                 <hr>
                                 
-                                Xcog's endevours will bolster Portlands economic strength and better the lives of its people through open door policies and 
+                                Xcog's endeavors will bolster Portland's economic environment and global position as well as better the lives of its people through continued commitment to empowering our neighborhoods and the individual through alternative education and real life problem managementment.  
                                 </p>
                                
                                 

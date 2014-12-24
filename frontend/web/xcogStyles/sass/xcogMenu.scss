@@ -168,8 +168,33 @@ a { text-decoration: none!important;
 //end menu 
 
 //header
-.main-header { 
+.main-header {
+    
+svg.icon.menuEject{
+    display: block;
+    position: absolute;
+    left: 29px;
+    top: 18px;
+    transform: rotate180deg;
+    &:hover, &:focus {
+        fill: #00f6ff;
+    }
+}
+.skullSVG{
+  fill: lightgrey;
+
+    -webkit-transition: all .3s .6s ease-in;
+    -moz-transition: all .3s .6s ease-in;
+    -ms-transition: all .3s .6s ease-in;
+    -o-transition: all .3s .6s ease-in;
+    transition: all  .3s .6s ease-in;
+
+    &:hover, &:focus {
+        fill: #00f6ff;
+    }
+}
     z-index: 20;
+    
     -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
     -moz-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
@@ -327,20 +352,8 @@ display: inline-block;
     width: 32px; 
 }
 
-.skullSVG{
-  fill: lightgrey;
 
-    -webkit-transition: all .3s .6s ease-in;
-    -moz-transition: all .3s .6s ease-in;
-    -ms-transition: all .3s .6s ease-in;
-    -o-transition: all .3s .6s ease-in;
-    transition: all  .3s .6s ease-in;
 
-    &:hover, &:focus {
-        fill: #00f6ff;
-    }
-
-}
 // font transitions and chaos
 .SIC { 
     top: 10px;
@@ -582,8 +595,8 @@ input[type=checkbox]:checked ~ #contentContainer {
      display: inline-block;
      
         img.xcogRobBanner {
-            
-            max-width:100%;
+            position: fixed;
+            max-width:1200px;
             height: auto;            
         }
         
