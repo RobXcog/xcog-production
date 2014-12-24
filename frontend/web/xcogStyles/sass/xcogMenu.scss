@@ -82,7 +82,10 @@ a { text-decoration: none!important;
 .xcogContent {
     padding: 10px 15px 10px 10px;
 }
-
+.contentContainer{
+    display: inline-block;
+    position: relative;
+}
 //Menu Start
 // menu
 .mainMenu {
@@ -539,13 +542,9 @@ input[type=checkbox]:checked ~ #contentContainer {
     white-space: nowrap;
 }
 
-#rachet {
-    
-    bottom:50px ;
-}
 .xcogBannerRob {
    
-  background-image: url("//farm8.staticflickr.com/7331/12960175804_e7a0049203_o.jpg") no-repeat center;
+  background-image: url("//farm4.staticflickr.com/3934/15452349119_7b7ae7a7c7_o.jpg") no-repeat center;
   background-size:  100%;
  height: 200px;
   h2.panel-title{
@@ -589,18 +588,19 @@ input[type=checkbox]:checked ~ #contentContainer {
     position: realtive;
     
 }
-    
+   
 //rob xcog
-#robsJumbo{
+#robsJumbo
+{
      display: inline-block;
-     
-        img.xcogRobBanner {
-            position: fixed;
-            max-width:1200px;
-            height: auto;            
-        }
-        
+     position: relative; 
+  background-image: url("//farm4.staticflickr.com/3934/15452349119_7b7ae7a7c7_o.jpg");
+  background-size:  100%;  
+  width:100%;
     }
     
-    
-    
+    .modal-content {
+        position: relative;
+        height:auto;
+        bottom: 0;
+    }
