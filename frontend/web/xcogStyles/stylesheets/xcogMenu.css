@@ -595,11 +595,14 @@ input[type=checkbox]:checked ~ #contentContainer {
   display: inline-block;
   position: relative;
   background-image: url("//farm4.staticflickr.com/3934/15452349119_7b7ae7a7c7_o.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: 100%;
   width: 100%;
+  height: auto;
 }
 
-/* line 602, ../sass/xcogMenu.scss */
+/* line 606, ../sass/xcogMenu.scss */
 .modal-content {
   position: relative;
   height: auto;
