@@ -25,10 +25,10 @@ class AppAsset extends AssetBundle
         '//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css',
     ];
     public $js = [
-        '../xcogstyles/javascripts/jquery1.11.js',
-        '../xcogstyles/javascripts/bootstrap.js',
-        '../xcogstyles/javascripts/xcogRX.js',
-        '../xcogstyles/javascripts/bootstrap-sprockets.js',
+        '/xcogStyles/javascripts/jquery1.11.js',
+        '/xcogStyles/javascripts/bootstrap.js',
+        '/xcogStyles/javascripts/xcogRX.js',
+        '/xcogStyles/javascripts/bootstrap-sprockets.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',

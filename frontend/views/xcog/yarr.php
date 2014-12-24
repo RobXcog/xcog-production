@@ -18,10 +18,10 @@
 
 use yii\helpers\Html;
 
-echo Html::cssFile('../../css/soundManager2Style.css');
+echo Html::cssFile('../css/soundManager2Style.css');
 
-echo Html::jsFile('../../js/soundManager2JS.js');
-echo Html::jsFile('../../js/bar-ui.js');
+echo Html::jsFile('../js/soundManager2JS.js');
+echo Html::jsFile('../js/bar-ui.js');
 
 
 $this->title = 'YarRadio!';
@@ -122,8 +122,8 @@ $this->title = 'YarRadio!';
                 <div class="sm2-playlist-wrapper">
                     <ul class="sm2-playlist-bd">
                         
-        <li class="selected"><a href="/assets/audio/icarus.mp3"><b>.icarus</b> - Rob Xcog<span class="label">Sic</span></a></li>
-        <li class="selected"><a href="/assets/audio/45me(Spitshine).mp3"><b>45me(Spitshine)</b> - Rob Xcog<span class="label">Angelspit Remix</span></a></li>
+        <li class="selected"><a href="/frontend/web/assets/audio/icarus.mp3"><b>.icarus</b> - Rob Xcog<span class="label">Sic</span></a></li>
+        <li class="selected"><a href="/frontend/web/assets/audio/45me(Spitshine).mp3"><b>45me(Spitshine)</b> - Rob Xcog<span class="label">Angelspit Remix</span></a></li>
      <li><a href="http://freshly-ground.com/data/audio/sm2/SonReal%20-%20Let%20Me%20%28Prod%202oolman%29.mp3"><b>SonReal</b> - Let Me <span class="label">Explicit</span></a></li>
      <li><a href="http://freshly-ground.com/data/audio/sm2/SonReal%20-%20People%20Asking.mp3"><b>SonReal</b> - People Asking <span class="label">Explicit</span></a></li>
      <li><a href="http://freshly-ground.com/data/audio/sm2/SonReal%20-%20Already%20There%20Remix%20ft.%20Rich%20Kidd%2C%20Saukrates.mp3"><b>SonReal</b> - Already There Remix ft. Rich Kidd, Saukrates <span class="label">Explicit</span></a></li>

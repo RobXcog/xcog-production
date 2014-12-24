@@ -5,6 +5,12 @@ use yii\helpers\Html;
 $this->title = 'Xcog Design Lab : Portland';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
+<style>
+.site-about{
+color:black;
+}
+</style>
+
 <div class="site-about">
     <div class="jumbotron-index">
     <h1><?= Html::encode($this->title) ?></h1>
