@@ -114,6 +114,13 @@ $model = new ContactForm();
         }        
     }
 
+    public function actionSponsers() 
+            {
+        
+        return $this->render('sponsers');
+        
+        
+    }
     public function actionRobxcog()
     {
         return $this->render('robxcog');

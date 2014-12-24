@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
+?>
 <div id="Metal"></div>
         <div class="panel panel-success xcogPannel" >
             <div class="panel-heading xcog-panelHeading"> 
