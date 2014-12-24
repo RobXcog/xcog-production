@@ -120,6 +120,8 @@ $sponser_options = '';
         </h2>
 
         <!-- Account View Start-->
+
+<p> Server Testing is in progress and buttons and links are disabled, we will be up very soon!, please email me for anything, questions or criticisms at <a href="mailto:rob@xcogstudios.com" >rob@xcogstudios.com</a> <hr> at the moment Safari and some mobile devices are having issues with svg rendering, for maximum Xicogginess use Chrome or Mozilla. I plan to make this not an issue. Your attention is always appreciated! :) rXC\m/G
         <!-- Account View end-->
 
     </div>

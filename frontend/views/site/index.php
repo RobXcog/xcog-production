@@ -30,6 +30,7 @@ $this->registerMetaTag(['name' => 'keywords', 'content' => 'xcog, xcogstudios, r
             
             <!-- col start-->
             <div class="col-xs-12 logoCol">
+            
                 <div class="smilelyXcogWrapper ">
                 
                    <i class="fa fa-cog fa-spin" id="logoCog" ></i>
@@ -41,7 +42,7 @@ $this->registerMetaTag(['name' => 'keywords', 'content' => 'xcog, xcogstudios, r
 <circle class="circleLogo" cx="100" cy="100" r="69" />
 </svg>
                 </div>
-                
+      
                 <!-- col end -->
                 
             </div>
@@ -83,6 +84,7 @@ $this->registerMetaTag(['name' => 'keywords', 'content' => 'xcog, xcogstudios, r
        
 
         <hr>
+         <h3> We are currently in Alpha Testing please excuse the mess :) </h3> <small> Your attention and patience is always appreciated! </small>         
         <p><i class="fa fa-cog fa-spin"></i><h2>Up The Game.</h2></p>
 
     <hr>
