@@ -34,9 +34,11 @@ return [
         ],
      
         'urlManager' => [
+            'baseUrl' => 'xcogstudios',
             'enablePrettyUrl' => true,
             'rules' => [
-                'robxcog/robsinteractiveresume' => 'xcog/resume',
+                'main' => 'site/index',
+                'robxcog/resume' => 'xcog/resume',
                 'about' => 'xcog/about',
                 'thefront' => 'xcog/index',
                 'enlistment' => 'site/signup',

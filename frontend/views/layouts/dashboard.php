@@ -962,7 +962,7 @@ $sponserRoute = 'sponsers';
 
         <!-- Account View Start-->
 
-        <p> Server Testing is in progress and buttons and links are disabled, we will be up very soon!, please email me for anything, questions or criticis ms at <a href="mailto:rob@xcogstudios.com" >rob@xcogstudios.com</a> your attention is always appreciated! :) rXC\m/G </p>
+        <p > <span class="text-danger"> ACTIVE DEVELOPMENT </span> Alpha Integration in progress, spelling atrocities and broken links are rampant.We (I) am looking for anyone who wants to contribute, we have room on the ground floor.<a href="mailto:rob@xcogstudios.com" >rob@xcogstudios.com</a> your attention is always appreciated! :) rXC\m/G </p>
         <!-- Account View end-->
 
     </div>
