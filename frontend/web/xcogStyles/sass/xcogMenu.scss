@@ -4,11 +4,12 @@
 // vars TODO: ∞ 
 
 //defaults
+$link_color: #9cbcb0;
+$link_visited-color: #00e5ff;
+$link_hover-color: #00e5ff; 
 $menu_width: 50%;
 
 //set up
-
-
 * {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -33,7 +34,17 @@ body, html {
   background-color: black;
 }
 
-a { text-decoration: none;
+a { text-decoration: none!important;
+    -webkit-transition: all .6s .2s ease-in ;
+    -moz-transition: all .6s .2s ease-in ;
+    -ms-transition: all .6s .2s ease-in ;
+    -o-transition: all .6s .2s ease-in ;
+    transition: all .6s .2s ease-in;  
+    color: $link_color;
+    &:hover, &:visited{
+        color:$link_hover-color;
+    }
+    
  
 }
 
@@ -515,6 +526,10 @@ input[type=checkbox]:checked ~ #contentContainer {
     white-space: nowrap;
 }
 
+#rachet {
+    
+    bottom:50px ;
+}
 .xcogBannerRob {
    
   background-image: url("//farm8.staticflickr.com/7331/12960175804_e7a0049203_o.jpg") no-repeat center;
@@ -561,4 +576,18 @@ input[type=checkbox]:checked ~ #contentContainer {
     position: realtive;
     
 }
+    
+//rob xcog
+#robsJumbo{
+     display: inline-block;
+     
+        img.xcogRobBanner {
+            
+            max-width:100%;
+            height: auto;            
+        }
+        
+    }
+    
+    
     
