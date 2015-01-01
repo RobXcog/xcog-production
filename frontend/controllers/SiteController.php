@@ -69,11 +69,9 @@ class SiteController extends Controller
     }
 
     public function actionIndex()
-    {
-        
+    {       
         return $this->render('index', [
-            'layout' => $this->layout, 
-        ]);
+            'layout' => $this->layout ]);
     }
 
     public function actionLogin()

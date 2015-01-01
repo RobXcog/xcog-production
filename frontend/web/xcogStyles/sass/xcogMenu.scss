@@ -4,14 +4,25 @@
 // vars TODO: ∞ 
 
 //defaults
-$link_color: #9cbcb0;
-$link_visited-color: #00e5ff;
+$link_color: #00e5ff;
+$link_visited-color: #9cbcb0;
 $link_hover-color: #00e5ff; 
 $menu_width: 50%;
 $link_active-color: #00ffd8;
 $glow: #f7b900;
-$f
+$skullColor-Hover:#00e5ff;
+$skullColor:#eeeeee;
+$ejectMenuColor: #3D4B69;
+$ejectMenuColor-Hover: #00e5ff;
 
+
+@mixin transitionEaseIn($sustain, $delay) {
+   -webkit-transition: all  $sustain, $delay ease-in ;
+      -moz-transition: all $sustain, $delay ease-in ;
+   -ms-transition: all $sustain, $delay ease-in ;
+    -o-transition: all $sustain, $delay ease-in ;
+    transition: all $sustain, $delay ease-in ;  
+}
 //set up
 * {
     box-sizing: border-box;
@@ -32,23 +43,19 @@ body::-webkit-scrollbar {
 
 body, html {
      position: relative;
-    margin: 0;
-  padding: 0px;
-  background-color: black;
+     margin: 0;
+     padding: 0px;
+     background-color: black;
 }
 
-a { text-decoration: none!important;
-    -webkit-transition: all .6s .2s ease-in ;
-    -moz-transition: all .6s .2s ease-in ;
-    -ms-transition: all .6s .2s ease-in ;
-    -o-transition: all .6s .2s ease-in ;
-    transition: all .6s .2s ease-in;  
+a { 
+    text-decoration: none!important;
+       @include transitionEaseIn(.6s, 1s);
     color: $link_color;
-    &:hover, &:visited{
+    &:hover, &:visited
+        {
         color:$link_hover-color;
     }
-    
- 
 }
 
 
@@ -91,9 +98,7 @@ a { text-decoration: none!important;
 }
 //Menu Start
 // menu
-.mainMenu {
-    
-   
+.mainMenu {   
     background: rgba(25, 25, 25, .5);
     color: darkgrey;
     position: fixed;
@@ -106,21 +111,14 @@ a { text-decoration: none!important;
     height: 100%;
     background: #3B3B3B;
     overflow-y: hide;
-
-    -webkit-transition: all .6s ease-in;
-    -moz-transition: all .6s ease-in;
-    -ms-transition: all .6s ease-in;
-    -o-transition: all .6s ease-in;
-    transition: all .6s ease-in;
-
+    @include transitionEaseIn(.3s, 0s);
     a {
-      
-    -webkit-transition: all .6s .2s ease-in ;
-    -moz-transition: all .6s .2s ease-in ;
-    -ms-transition: all .6s .2s ease-in ;
-    -o-transition: all .6s .2s ease-in ;
-    transition: all .6s .2s ease-in;  
-
+        display: block;
+        background: linear-gradient(#3E3E3E, #383838);
+        border-top: 1px solid #484848;
+        border-bottom: 1px solid #2E2E2E;
+        color: white;
+      @include transitionEaseIn(.3s,0s);
         display: block;
         background: linear-gradient(#3E3E3E, #383838);
         border-top: 1px solid #484848;
@@ -128,7 +126,7 @@ a { text-decoration: none!important;
         color: white;
         padding: 15px;
         &:hover, &:focus {
-            background: linear-gradient(#484848, #186c96);
+          background: linear-gradient(#484848, #186c96);
         }
     }
     &:after {
@@ -143,15 +141,9 @@ a { text-decoration: none!important;
     }
 }
 
-
 #menuUl {
+      @include transitionEaseIn(.6s, 1s);
 
-    
-    -webkit-transition: all .6s .2s ease-in ;
-    -moz-transition: all .6s .2s ease-in ;
-    -ms-transition: all .6s .2s ease-in ;
-    -o-transition: all .6s .2s ease-in ;
-    transition: all .6s .2s ease-in;
     a {
        color: #7f7f7f;   
         &:hover, &:focus {
@@ -170,37 +162,40 @@ a { text-decoration: none!important;
         color: #e15eff;
       }
     } 
-} 
+}
+svg.icon.menuEject{
+    fill:$ejectMenuColor;
+
+    display: block;
+    position: absolute;
+    left: 14px;
+    top: 18px;
+    transform: rotate180deg;
+    &:hover, &:focus {
+        fill: $ejectMenuColor-Hover;
+    }
+}
 //end menu 
 
 //header
 .main-header {
+    z-index: 40;
+    display: inline-block;
+    .subHeader {
+        
+  
+        
     
-svg.icon.menuEject{
-    display: block;
-    position: absolute;
-    left: 29px;
-    top: 18px;
-    transform: rotate180deg;
-    &:hover, &:focus {
-        fill: #00f6ff;
     }
-}
-.skullSVG{
-  fill: lightgrey;
-
-    -webkit-transition: all .3s .6s ease-in;
-    -moz-transition: all .3s .6s ease-in;
-    -ms-transition: all .3s .6s ease-in;
-    -o-transition: all .3s .6s ease-in;
-    transition: all  .3s .6s ease-in;
-
-    &:hover, &:focus {
-        fill: #00f6ff;
+    .skullSVG
+        {
+            fill: $skullColor;
+            @include transitionEaseIn(.6s, .1s);
+            &:hover, &:focus {
+            fill: $skullColor-Hover;
+        }
+        z-index: 20;
     }
-}
-    z-index: 20;
-    
     -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
     -moz-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
@@ -221,9 +216,7 @@ svg.icon.menuEject{
     width: 100%;
     left: 0;
     transition: all 0.3s ease;
-    
 }
-
 //end of header
 .contentWrap {
    position: relative;
@@ -232,16 +225,13 @@ svg.icon.menuEject{
    padding-top: 150px;
     float: right;
     width: 100%;
-    transition: width 0.3s ease;
+    transition: width 0.1s ease;
     line-height: 1.6;
     color: white;
     text-align: center;
 
-    -webkit-transition: all .6s ease-in;
-    -moz-transition: all .6s ease-in;
-    -ms-transition: all .6s ease-in;
-    -o-transition: all .6s ease-in;
-    transition: all .6s ease-in;
+    //  @include transitionEaseIn(.3s);
+
 
     background: #252c3f; /* Old browsers */
     /* IE9 SVG, needs conditional override of 'filter' to 'none' */
@@ -325,7 +315,7 @@ svg.icon.menuEject{
     
 }
 .iconGrin{
- 
+
     position: relative;
     fill: black;
     z-index: 10;
@@ -358,29 +348,34 @@ display: inline-block;
     width: 32px; 
 }
 
+svg#xcogLogoXXX {
+    display: inline-block;
+    position: absolute;
+  max-height: 32px;
+   width: 32px;
+}
 
+#xcogLogoCog {   
+    display: inline-block;
+    position: absolute;
+     max-height: 32px;
+   width: 32px; 
+}
 
 // font transitions and chaos
 .SIC { 
     top: 10px;
     font-size: 60px; 
-    -webkit-transition: all .6s .2s ease-in ;
-    -moz-transition: all .6s .2s ease-in ;
-    -ms-transition: all .6s .2s ease-in ;
-    -o-transition: all .6s .2s ease-in ;
-    transition: all .6s .2s ease-in;
+       @include transitionEaseIn(.6s, 1s);
+
     &:hover, &:focus {
         color: #2aff00;
     }
 }
 
 .xcogIgnite, .ignite, .glow, .rejuved, .freeze, .potent {
+   @include transitionEaseIn(.6s, 1s);
 
-    -webkit-transition: all .6s .1s ease-in ;
-    -moz-transition: all .6s .1s ease-in ;
-    -ms-transition: all .6s .1s ease-in ;
-    -o-transition: all .6s .1s ease-in ;
-    transition: all .6s .1s ease-in;
 }
 .biohazard {
     
@@ -409,98 +404,15 @@ display: inline-block;
 }
 
 #idCBOX {
-    -webkit-transition: all .6s .2s ease-in ;
-    -moz-transition: all .6s .2s ease-in ;
-    -ms-transition: all .6s .2s ease-in ;
-    -o-transition: all .6s .2s ease-in ;
-    transition: all .6s .2s ease-in;
+      @include transitionEaseIn(.6s, .1s);
+
     &:hover, &:focus {
         color: #2aff00;
     }
 }
 
-.CHECK {
-    -webkit-transition: all .6s .2s ease-in ;
-    -moz-transition: all .6s .2s ease-in ;
-    -ms-transition: all .6s .2s ease-in ;
-    -o-transition: all .6s .2s ease-in ;
-    transition: all .6s .2s ease-in;
-    color: grey;
-    &:hover, &:focus {
-        color: yellow;
-    }
-}
-
-.X {
-    -webkit-transition: all .6s .2s ease-in ;
-    -moz-transition: all .6s .2s ease-in ;
-    -ms-transition: all .6s .2s ease-in ;
-    -o-transition: all .6s .2s ease-in ;
-    transition: all .6s .2s ease-in;
-    &:hover, &:focus {
-        color: #2aff00;
-
-    }
-
-}
-.Xtwo {
-    -webkit-transition: all .6s .2s ease-in ;
-    -moz-transition: all .6s .2s ease-in ;
-    -ms-transition: all .6s .2s ease-in ;
-    -o-transition: all .6s .2s ease-in ;
-    transition: all .6s .2s ease-in;
-    &:hover, &:focus {
-        color: #19f3ff;
-
-    }
-}
-
-.G
-{
-    -webkit-transition: all .6s .2s ease-in ;
-    -moz-transition: all .6s .2s ease-in ;
-    -ms-transition: all .6s .2s ease-in ;
-    -o-transition: all .6s .2s ease-in ;
-    transition: all .6s .2s ease-in;
-    &:hover, &:focus {
-        color: yellow;
-    } 
-}
-.BO {
-    -webkit-transition: all .6s .2s ease-in ;
-    -moz-transition: all .6s .2s ease-in ;
-    -ms-transition: all .6s .2s ease-in ;
-    -o-transition: all .6s .2s ease-in ;
-    transition: all .6s .2s ease-in;
-    color:grey;
-    &:hover, &:focus {
-        color: #19f3ff;
-    } 
-}
-.COG{
-    -webkit-transition: all .6s .1s ease-in;
-    -moz-transition: all .6s .1s ease-in;
-    -ms-transition: all .6s .1s ease-in;
-    -o-transition: all .6s .1s ease-in;
-    transition: all .6s .1s ease-in;
-    &:hover, &:focus {
-
-        color: #f20000;
-    }
-}
-
-.HACK {
-    color: #3d3d3d;
-    font-size: 18px;
-    -webkit-transition: all .6s .2s ease-in ;
-    -moz-transition: all .6s .2s ease-in ;
-    -ms-transition: all .6s .2s ease-in ;
-    -o-transition: all .6s .2s ease-in ;
-    transition: all .6s .2s ease-in;
-    &:hover, &:focus {
-        color: #f20000;
-
-    }
+.G, .COG, .HACK, .BO, .Xtwo, .X,.CHECK {
+       @include transitionEaseIn(.6s, .1s);
 }
 
 // logic
@@ -528,7 +440,7 @@ input[type=checkbox]:checked ~ #contentContainer {
     width: 78%;
  //  
     
-}
+}  
 
 // logic end
 
@@ -544,7 +456,6 @@ input[type=checkbox]:checked ~ #contentContainer {
 .xcogNowrap{
     white-space: nowrap;
 }
-
 .xcogBannerRob {
    
   background-image: url("//farm4.staticflickr.com/3934/15452349119_7b7ae7a7c7_o.jpg") no-repeat center;
@@ -560,7 +471,14 @@ input[type=checkbox]:checked ~ #contentContainer {
    }
 }
 
-
+//HEader default
+.subHeader {
+    size:12px;
+    position: relative;
+    
+    
+}
+//header default end
 //index styles
 
 .site-index{
@@ -581,21 +499,25 @@ input[type=checkbox]:checked ~ #contentContainer {
 
 .xcog-resume {
     display: inline-block;
-
-        line-height: 1.1;
+    line-height: 1.1;
     padding: 5px;
     padding-left: 50px;
     text-align: center;
     color: white;
     text-shadow: #222 0px -1px 1px;
     position: realtive;
+    #myModal { 
+    overflow: visible;
+    display: inline-block;
+    top: 200px;
     
+}
 }
    
 //rob xcog
 #robsJumbo
 {
-    color
+    color:#186c96;
      display: inline-block;
      position: relative; 
   background-image: url("//farm4.staticflickr.com/3934/15452349119_7b7ae7a7c7_o.jpg");

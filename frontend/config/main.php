@@ -1,9 +1,7 @@
 <?php
+
 $params = array_merge(
-    require(__DIR__ . '/../../common/config/params.php'),
-    require(__DIR__ . '/../../common/config/params-local.php'),
-    require(__DIR__ . '/params.php'),
-    require(__DIR__ . '/params-local.php')
+        require(__DIR__ . '/../../common/config/params.php'), require(__DIR__ . '/../../common/config/params-local.php'), require(__DIR__ . '/params.php'), require(__DIR__ . '/params-local.php')
 );
 
 return [
@@ -12,8 +10,9 @@ return [
     'bootstrap' => ['log'],
     'controllerNamespace' => 'frontend\controllers',
     'components' => [
+
         'xcog' => [
-          'class' => 'frontend\controllers\Xcog',
+            'class' => 'frontend\controllers\Xcog',
             'defaultAction' => 'index',
         ],
         'user' => [
@@ -32,11 +31,25 @@ return [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
-     
+         'request' => [
+                    'parsers' => [
+                        'application/json' => 'yii\web\JsonParser',
+                    ]
+                ],
+         'defaultRoute' => 'site/index',
         'urlManager' => [
-            'baseUrl' => 'xcogstudios',
+           
+            'baseUrl' => '/',
             'enablePrettyUrl' => true,
+            'enableStrictParsing' => true,
+            'showScriptName' => false,
+           
             'rules' => [
+                ['class' => 'yii\rest\UrlRule',
+                    'controller' => 'xcog',
+                    
+                    ], 
+                
                 'main' => 'site/index',
                 'robxcog/resume' => 'xcog/resume',
                 'about' => 'xcog/about',
@@ -48,11 +61,10 @@ return [
                 'robxcog/resume' => 'xcog/robxcog/resume',
                 'xcog/music' => 'xcog/yarr',
                 'xcog/jobs/jobboard' => 'site/contact',
-                'sponsers' => 'xcog/sponsers'
-            ],
-        ],   
+                'sponsers' => 'xcog/sponsers',
+                
+            ]
+        ],
     ],
     'params' => $params,
-    
- 
 ];

@@ -1,0 +1,905 @@
+@charset "UTF-8";
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 27, 2014, 2:58:44 AM
+    Author     : Rob Xcog rob@xcogstudios.com (Im usually friendly)
+*/
+/**
+ * HTML5 ✰ Boilerplate
+ *
+ * style.css contains a reset, font normalization and some base styles.
+ *
+ * Credit is left where credit is due.
+ * Much inspiration was taken from these projects:
+ * - yui.yahooapis.com/2.8.1/build/base/base.css
+ * - camendesign.com/design/
+ * - praegnanz.de/weblog/htmlcssjs-kickstart
+ */
+/**
+ * html5doctor.com Reset Stylesheet (Eric Meyer's Reset Reloaded + HTML5 baseline)
+ * v1.6.1 2010-09-17 | Authors: Eric Meyer & Richard Clark
+ * html5doctor.com/html-5-reset-stylesheet/
+ */
+/* line 32, ../sass/xcogStyleSheet.scss */
+html, body, body div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 49, ../sass/xcogStyleSheet.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 53, ../sass/xcogStyleSheet.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 55, ../sass/xcogStyleSheet.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+/* line 58, ../sass/xcogStyleSheet.scss */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* line 60, ../sass/xcogStyleSheet.scss */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* line 62, ../sass/xcogStyleSheet.scss */
+del {
+  text-decoration: line-through;
+}
+
+/* line 64, ../sass/xcogStyleSheet.scss */
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+/* line 66, ../sass/xcogStyleSheet.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 68, ../sass/xcogStyleSheet.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/**
+ * Font normalization inspired by YUI Library's fonts.css: developer.yahoo.com/yui/
+ */
+/* line 75, ../sass/xcogStyleSheet.scss */
+body {
+  font: 13px/1.231 sans-serif;
+  *font-size: small;
+}
+
+/* Hack retained to preserve specificity */
+/* Normalize monospace sizing:
+   en.wikipedia.org/wiki/MediaWiki_talk:Common.css/Archive_11#Teletype_style_fix_for_Chrome */
+/* line 79, ../sass/xcogStyleSheet.scss */
+pre, code, kbd, samp {
+  font-family: monospace, sans-serif;
+}
+
+/**
+ * Minimal base styles.
+ */
+/* 1) Always force a scrollbar in non-IE 
+   2) Remove iOS text size adjust without disabling user zoom: www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
+/* line 88, ../sass/xcogStyleSheet.scss */
+html {
+  overflow-y: scroll;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* j.mp/webkit-tap-highlight-color */
+/* line 91, ../sass/xcogStyleSheet.scss */
+a:link {
+  -webkit-tap-highlight-color: #FF5E99;
+}
+
+/* Accessible focus treatment: people.opera.com/patrickl/experiments/keyboard/test */
+/* line 94, ../sass/xcogStyleSheet.scss */
+a:hover, a:active {
+  outline: none;
+}
+
+/* line 96, ../sass/xcogStyleSheet.scss */
+a, a:active, a:visited {
+  color: #607890;
+}
+
+/* line 97, ../sass/xcogStyleSheet.scss */
+a:hover {
+  color: #036;
+}
+
+/* line 99, ../sass/xcogStyleSheet.scss */
+ul, ol {
+  margin-left: 2em;
+}
+
+/* line 100, ../sass/xcogStyleSheet.scss */
+ol {
+  list-style-type: decimal;
+}
+
+/* Remove margins for navigation lists */
+/* line 103, ../sass/xcogStyleSheet.scss */
+nav ul, nav li {
+  margin: 0;
+  list-style: none;
+  list-style-image: none;
+}
+
+/* line 105, ../sass/xcogStyleSheet.scss */
+small {
+  font-size: 85%;
+}
+
+/* line 106, ../sass/xcogStyleSheet.scss */
+b, strong, th {
+  font-weight: bold;
+}
+
+/* line 108, ../sass/xcogStyleSheet.scss */
+td {
+  vertical-align: top;
+}
+
+/* Set sub, sup without affecting line-height: gist.github.com/413930 */
+/* line 111, ../sass/xcogStyleSheet.scss */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+}
+
+/* line 112, ../sass/xcogStyleSheet.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 113, ../sass/xcogStyleSheet.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 115, ../sass/xcogStyleSheet.scss */
+pre {
+  /* www.pathf.com/blogs/2008/05/formatting-quoted-code-in-blog-posts-css21-white-space-pre-wrap/ */
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  padding: 15px;
+}
+
+/* line 121, ../sass/xcogStyleSheet.scss */
+.ie6 legend, .ie7 legend {
+  margin-left: -7px;
+}
+
+/* 1) Make inputs and buttons play nice in IE: www.viget.com/inspire/styling-the-button-element-in-internet-explorer/
+   2) WebKit browsers add a 2px margin outside the chrome of form elements. 
+      Firefox adds a 1px margin above and below textareas 
+   3) Set font-size to match <body>'s, and font-family to sans-serif 
+   4) Align to baseline */
+/* line 128, ../sass/xcogStyleSheet.scss */
+button, input, select, textarea {
+  width: auto;
+  overflow: visible;
+  margin: 0;
+  font-size: 100%;
+  font-family: sans-serif;
+  vertical-align: baseline;
+}
+
+/* 1) Remove default scrollbar in IE: www.sitepoint.com/blogs/2010/08/20/ie-remove-textarea-scrollbars/
+   2) Align to text-top */
+/* line 132, ../sass/xcogStyleSheet.scss */
+textarea {
+  overflow: auto;
+  vertical-align: text-top;
+}
+
+/* Hand cursor on clickable input elements */
+/* line 135, ../sass/xcogStyleSheet.scss */
+label, input[type="button"], input[type="submit"], input[type="image"], button {
+  cursor: pointer;
+}
+
+/* Remove extra padding and inner border in Firefox */
+/* line 138, ../sass/xcogStyleSheet.scss */
+input::-moz-focus-inner,
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* Colors for form validity */
+/* line 143, ../sass/xcogStyleSheet.scss */
+input:invalid, textarea:invalid {
+  border-radius: 1px;
+  -moz-box-shadow: 0px 0px 5px red;
+  -webkit-box-shadow: 0px 0px 5px red;
+  box-shadow: 0px 0px 5px red;
+}
+
+/* line 144, ../sass/xcogStyleSheet.scss */
+.no-boxshadow input:invalid, .no-boxshadow textarea:invalid {
+  background-color: #f0dddd;
+}
+
+/* Bicubic resizing for non-native sized IMG:
+   code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/ */
+/* line 148, ../sass/xcogStyleSheet.scss */
+.ie7 img {
+  -ms-interpolation-mode: bicubic;
+}
+
+/**
+ * You might tweak these..
+ */
+/* line 155, ../sass/xcogStyleSheet.scss */
+body, select, input, textarea {
+  /* #444 looks better than black: twitter.com/H_FJ/statuses/11800719859 */
+  color: #444;
+  /* Set your base font here, to apply evenly */
+  /* font-family: Georgia, serif;  */
+}
+
+/* Headers (h1, h2, etc) have no default font-size or margin; define those yourself */
+/* line 163, ../sass/xcogStyleSheet.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+/* These selection declarations have to be separate
+   No text-shadow: twitter.com/miketaylr/status/12228805301
+   Also: hot pink! yesssss.robxcog */
+/* line 168, ../sass/xcogStyleSheet.scss */
+::-moz-selection {
+  background: #fe57a1;
+  color: #fff;
+  text-shadow: none;
+}
+
+/* line 169, ../sass/xcogStyleSheet.scss */
+::selection {
+  background: #fe57a1;
+  color: #fff;
+  text-shadow: none;
+}
+
+/**
+ * Primary styles
+ *
+ * Author: rob@xcogstudios.com
+ */
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 27, 2014, 10:30:29 PM
+    Author     : Rob Xcog rob@xcogstudios.com (Im usually friendly)
+*/
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 27, 2014, 10:47:13 PM
+    Author     : Rob Xcog rob@xcogstudios.com (Im usually friendly)
+*/
+@media screen and (min-width: 240px) {
+  /* line 22, ../sass/partials/states/default/_structures.scss */
+  html {
+    margin-left: calc(100vw - 100%);
+    margin-right: 0;
+  }
+}
+/* line 29, ../sass/partials/states/default/_structures.scss */
+body::-webkit-scrollbar {
+  /* This is the magic bit */
+  display: none;
+}
+
+/* line 33, ../sass/partials/states/default/_structures.scss */
+#skull {
+  position: relative;
+  top: 0px;
+  left: -10px;
+}
+
+/* line 40, ../sass/partials/states/default/_structures.scss */
+#contentContainer {
+  position: relative;
+  z-index: 10;
+  padding: 0px;
+  padding-top: 150px;
+  float: right;
+  transition: width 0.1s ease;
+  line-height: 1.6;
+  color: white;
+  text-align: center;
+  background: #252c3f;
+  /* Old browsers */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzI1MmMzZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjM5JSIgc3RvcC1jb2xvcj0iIzNmNGM2YiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM1ODZmOTYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(left, #252c3f 0%, #3f4c6b 39%, #586f96 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #252c3f), color-stop(39%, #3f4c6b), color-stop(100%, #586f96));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, #252c3f 0%, #3f4c6b 39%, #586f96 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, #252c3f 0%, #3f4c6b 39%, #586f96 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, #252c3f 0%, #3f4c6b 39%, #586f96 100%);
+  /* IE10+ */
+  background: linear-gradient(to right, #252c3f 0%, #3f4c6b 39%, #586f96 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#252c3f', endColorstr='#586f96',GradientType=1 );
+  /* IE6-8 */
+}
+
+/* line 66, ../sass/partials/states/default/_structures.scss */
+.contentFull {
+  width: 100%;
+}
+
+/* line 69, ../sass/partials/states/default/_structures.scss */
+.contentSquish {
+  width: 80%;
+}
+
+/* line 75, ../sass/partials/states/default/_structures.scss */
+#xcogNavigation {
+  background: rgba(25, 25, 25, 0.5);
+  color: darkgrey;
+  position: fixed;
+  top: 0;
+  float: left;
+  padding-top: 135px;
+  display: block;
+  width: 50%;
+  height: 100%;
+  background: #3B3B3B;
+  overflow-y: hide;
+  -webkit-transition: all 0.3s, 0.1s ease-in;
+  -moz-transition: all 0.3s, 0.1s ease-in;
+  -ms-transition: all 0.3s, 0.1s ease-in;
+  -o-transition: all 0.3s, 0.1s ease-in;
+  transition: all 0.3s, 0.1s ease-in;
+}
+/* line 89, ../sass/partials/states/default/_structures.scss */
+#xcogNavigation a {
+  display: block;
+  background: linear-gradient(#3E3E3E, #383838);
+  border-top: 1px solid #484848;
+  border-bottom: 1px solid #2E2E2E;
+  color: white;
+  -webkit-transition: all 0.3s, 0.1s ease-in;
+  -moz-transition: all 0.3s, 0.1s ease-in;
+  -ms-transition: all 0.3s, 0.1s ease-in;
+  -o-transition: all 0.3s, 0.1s ease-in;
+  transition: all 0.3s, 0.1s ease-in;
+  display: block;
+  background: linear-gradient(#3E3E3E, #383838);
+  border-top: 1px solid #484848;
+  border-bottom: 1px solid #2E2E2E;
+  color: white;
+  padding: 15px;
+}
+/* line 102, ../sass/partials/states/default/_structures.scss */
+#xcogNavigation a:hover, #xcogNavigation a:focus {
+  background: linear-gradient(#484848, #186c96);
+}
+/* line 106, ../sass/partials/states/default/_structures.scss */
+#xcogNavigation:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 34px;
+  background: linear-gradient(left, transparent, rgba(0, 0, 0, 0.4));
+}
+
+/* line 117, ../sass/partials/states/default/_structures.scss */
+.menuShow {
+  width: 20%;
+  opacity: 1;
+}
+
+/* line 121, ../sass/partials/states/default/_structures.scss */
+.menuHide {
+  width: 50%;
+  opacity: 0;
+}
+
+/* line 127, ../sass/partials/states/default/_structures.scss */
+#menuUl {
+  -webkit-transition: all 0.6s, 0.1s ease-in;
+  -moz-transition: all 0.6s, 0.1s ease-in;
+  -ms-transition: all 0.6s, 0.1s ease-in;
+  -o-transition: all 0.6s, 0.1s ease-in;
+  transition: all 0.6s, 0.1s ease-in;
+}
+/* line 130, ../sass/partials/states/default/_structures.scss */
+#menuUl a {
+  color: #7f7f7f;
+}
+/* line 132, ../sass/partials/states/default/_structures.scss */
+#menuUl a:hover, #menuUl a:focus {
+  color: #ff1414;
+}
+/* line 135, ../sass/partials/states/default/_structures.scss */
+#menuUl a.freeze:hover, #menuUl a.ignite:focus {
+  color: #19f3ff;
+}
+/* line 138, ../sass/partials/states/default/_structures.scss */
+#menuUl a.glow:hover, #menuUl a.glow:focus {
+  color: #f7b900;
+}
+/* line 141, ../sass/partials/states/default/_structures.scss */
+#menuUl a.rejuved:hover, #menuUl a.ignite:focus {
+  color: #10ff00;
+}
+/* line 144, ../sass/partials/states/default/_structures.scss */
+#menuUl a.potent:hover, #menuUl a.rejuved:focus {
+  color: #e15eff;
+}
+
+/* line 149, ../sass/partials/states/default/_structures.scss */
+svg.icon.menuEject {
+  fill: #3D4B69;
+  display: block;
+  position: absolute;
+  left: 14px;
+  top: 18px;
+  transform: rotate180deg;
+}
+/* line 157, ../sass/partials/states/default/_structures.scss */
+svg.icon.menuEject:hover, svg.icon.menuEject:focus {
+  fill: #00e5ff;
+}
+
+/* line 167, ../sass/partials/states/default/_structures.scss */
+#xcogHeader {
+  z-index: 40;
+  display: inline-block;
+  -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzhmOTZhZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjMlIiBzdG9wLWNvbG9yPSIjM2Y0YzZiIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iOTclIiBzdG9wLWNvbG9yPSIjM2Y0YzZiIiBzdG9wLW9wYWNpdHk9IjAuOSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDMxOTQ0IiBzdG9wLW9wYWNpdHk9IjAuOSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top, #8f96ad 0%, #3f4c6b 3%, rgba(63, 76, 107, 0.9) 97%, rgba(3, 25, 68, 0.9) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #8f96ad), color-stop(3%, #3f4c6b), color-stop(97%, rgba(63, 76, 107, 0.9)), color-stop(100%, rgba(3, 25, 68, 0.9)));
+  background: -webkit-linear-gradient(top, #8f96ad 0%, #3f4c6b 3%, rgba(63, 76, 107, 0.9) 97%, rgba(3, 25, 68, 0.9) 100%);
+  background: -o-linear-gradient(top, #8f96ad 0%, #3f4c6b 3%, rgba(63, 76, 107, 0.9) 97%, rgba(3, 25, 68, 0.9) 100%);
+  background: -ms-linear-gradient(top, #8f96ad 0%, #3f4c6b 3%, rgba(63, 76, 107, 0.9) 97%, rgba(3, 25, 68, 0.9) 100%);
+  background: linear-gradient(to bottom, #8f96ad 0%, #3f4c6b 3%, rgba(63, 76, 107, 0.9) 97%, rgba(3, 25, 68, 0.9) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8f96ad', endColorstr='#e6031944',GradientType=0 );
+  line-height: 1.1;
+  padding: 5px;
+  text-align: center;
+  color: white;
+  text-shadow: #222 0px -1px 1px;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  transition: all 0.3s ease;
+}
+/* line 173, ../sass/partials/states/default/_structures.scss */
+#xcogHeader .skullSVG {
+  fill: #eeeeee;
+  -webkit-transition: all 0.6s, 0.1s ease-in;
+  -moz-transition: all 0.6s, 0.1s ease-in;
+  -ms-transition: all 0.6s, 0.1s ease-in;
+  -o-transition: all 0.6s, 0.1s ease-in;
+  transition: all 0.6s, 0.1s ease-in;
+  z-index: 20;
+}
+/* line 177, ../sass/partials/states/default/_structures.scss */
+#xcogHeader .skullSVG:hover, #xcogHeader .skullSVG:focus {
+  fill: #00e5ff;
+}
+
+/* line 206, ../sass/partials/states/default/_structures.scss */
+.xcogPannel {
+  -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* line 212, ../sass/partials/states/default/_structures.scss */
+.site-index {
+  font-size: 24px;
+  font-family: "Times New Roman", Times, serif;
+  color: grey;
+}
+
+/* line 219, ../sass/partials/states/default/_structures.scss */
+.iconGrin {
+  position: relative;
+  fill: black;
+  z-index: 10;
+  top: -130px;
+  right: 80px;
+}
+
+/* line 227, ../sass/partials/states/default/_structures.scss */
+.smileyCircleSVG {
+  z-index: 7;
+  position: relative;
+  right: 25px;
+  top: -316px;
+  width: 200px;
+  height: 200px;
+}
+
+/* line 235, ../sass/partials/states/default/_structures.scss */
+.circleLogo {
+  position: absolute;
+  z-index: 8;
+  fill: #faff00;
+}
+
+/* line 240, ../sass/partials/states/default/_structures.scss */
+.icon {
+  display: inline-block;
+  fill: white;
+  height: 32px;
+  width: 32px;
+}
+
+/* line 246, ../sass/partials/states/default/_structures.scss */
+.icon-o {
+  display: inline-block;
+  fill: darkgrey;
+  height: 32px;
+  width: 32px;
+}
+
+/* line 254, ../sass/partials/states/default/_structures.scss */
+.logoCol {
+  max-height: 200px;
+  min-height: 200px;
+}
+
+/* line 259, ../sass/partials/states/default/_structures.scss */
+.logoRow {
+  max-height: 150px;
+}
+
+/* line 263, ../sass/partials/states/default/_structures.scss */
+.smilelyXcogWrapper {
+  position: relative;
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+}
+
+/* line 269, ../sass/partials/states/default/_structures.scss */
+#logoCog {
+  position: relative;
+  z-index: 5;
+  color: black;
+  font-size: 160px;
+}
+
+/* line 276, ../sass/partials/states/default/_structures.scss */
+.iconEvil {
+  position: relative;
+  fill: black;
+  z-index: 10;
+  top: -127px;
+  right: 80px;
+}
+
+/* line 284, ../sass/partials/states/default/_structures.scss */
+.iconGrin {
+  position: relative;
+  fill: black;
+  z-index: 10;
+  top: -130px;
+  right: 80px;
+}
+
+/* line 292, ../sass/partials/states/default/_structures.scss */
+.smileyCircleSVG {
+  z-index: 7;
+  position: relative;
+  right: 25px;
+  top: -316px;
+  width: 200px;
+  height: 200px;
+}
+
+/* line 300, ../sass/partials/states/default/_structures.scss */
+.circleLogo {
+  position: absolute;
+  z-index: 8;
+  fill: #faff00;
+}
+
+/* line 309, ../sass/partials/states/default/_structures.scss */
+.SIC {
+  top: 10px;
+  font-size: 60px;
+  -webkit-transition: all 0.6s, 1s ease-in;
+  -moz-transition: all 0.6s, 1s ease-in;
+  -ms-transition: all 0.6s, 1s ease-in;
+  -o-transition: all 0.6s, 1s ease-in;
+  transition: all 0.6s, 1s ease-in;
+}
+/* line 314, ../sass/partials/states/default/_structures.scss */
+.SIC:hover, .SIC:focus {
+  color: #2aff00;
+}
+
+/* line 319, ../sass/partials/states/default/_structures.scss */
+.xcogIgnite, .ignite, .glow, .rejuved, .freeze, .potent {
+  -webkit-transition: all 0.6s, 1s ease-in;
+  -moz-transition: all 0.6s, 1s ease-in;
+  -ms-transition: all 0.6s, 1s ease-in;
+  -o-transition: all 0.6s, 1s ease-in;
+  transition: all 0.6s, 1s ease-in;
+}
+
+/* line 323, ../sass/partials/states/default/_structures.scss */
+.biohazard {
+  font-size: 84px;
+}
+
+/* line 331, ../sass/partials/states/default/_structures.scss */
+.xcogIgnite:hover {
+  color: red;
+}
+
+/* line 339, ../sass/partials/states/default/_structures.scss */
+.potent:hover, .potent:focus {
+  fill: #ff00e1;
+}
+
+/* line 344, ../sass/partials/states/default/_structures.scss */
+.subTitle {
+  color: lightGrey;
+  font-size: 12;
+}
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 27, 2014, 10:28:57 PM
+    Author     : Rob Xcog rob@xcogstudios.com (Im usually friendly)
+*/
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 27, 2014, 10:29:29 PM
+    Author     : Rob Xcog rob@xcogstudios.com (Im usually friendly)
+*/
+/* line 27, ../sass/partials/states/default/_themes.scss */
+a {
+  text-decoration: none !important;
+  -webkit-transition: all 0.6s, 1s ease-in;
+  -moz-transition: all 0.6s, 1s ease-in;
+  -ms-transition: all 0.6s, 1s ease-in;
+  -o-transition: all 0.6s, 1s ease-in;
+  transition: all 0.6s, 1s ease-in;
+  color: #00e5ff;
+}
+/* line 31, ../sass/partials/states/default/_themes.scss */
+a:hover, a:visited {
+  color: #00e5ff;
+}
+
+/**
+ * Non-semantic helper classes: please define your styles before this section.
+ */
+/* For image replacement */
+/* line 190, ../sass/xcogStyleSheet.scss */
+.ir {
+  display: block;
+  text-indent: -999em;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  text-align: left;
+  direction: ltr;
+}
+
+/* line 191, ../sass/xcogStyleSheet.scss */
+.ir br {
+  display: none;
+}
+
+/* Hide for both screenreaders and browsers:
+   css-discuss.incutio.com/wiki/Screenreader_Visibility */
+/* line 195, ../sass/xcogStyleSheet.scss */
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+/* Hide only visually, but have it available for screenreaders: by Jon Neal.
+  www.webaim.org/techniques/css/invisiblecontent/  &  j.mp/visuallyhidden */
+/* line 199, ../sass/xcogStyleSheet.scss */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: drupal.org/node/897638 */
+/* line 201, ../sass/xcogStyleSheet.scss */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/* Hide visually and from screenreaders, but maintain layout */
+/* line 205, ../sass/xcogStyleSheet.scss */
+.invisible {
+  visibility: hidden;
+}
+
+/* The Magnificent Clearfix: Updated to prevent margin-collapsing on child elements in most situations.
+   nicolasgallagher.com/micro-clearfix-hack/ */
+/* line 209, ../sass/xcogStyleSheet.scss */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+
+/* line 210, ../sass/xcogStyleSheet.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 211, ../sass/xcogStyleSheet.scss */
+.clearfix {
+  zoom: 1;
+}
+
+/**
+ * Placeholder media queries for responsive design. Modify as design requires.
+ * These follow after, and will override, the primary ('mobile first') styles
+ * The closing /mediaquery comment is required by respond.js min/max-width Media Query polyfill
+ */
+@media only screen and (min-width: 480px) {
+  /* Style adjustments for viewports 480px and over go here */
+}
+/*/mediaquery*/
+@media only screen and (min-width: 768px) {
+  /* Style adjustments for viewports 768px and over go here */
+}
+/*/mediaquery*/
+/**
+ * Print styles.
+ *
+ * Inlined to avoid required HTTP connection: www.phpied.com/delay-loading-your-print-css/
+ */
+@media print {
+  /* line 247, ../sass/xcogStyleSheet.scss */
+  * {
+    background: transparent !important;
+    color: black !important;
+    text-shadow: none !important;
+    filter: none !important;
+    -ms-filter: none !important;
+  }
+
+  /* Black prints faster: sanbeiji.com/archives/953 */
+  /* line 249, ../sass/xcogStyleSheet.scss */
+  a, a:visited {
+    color: #444 !important;
+    text-decoration: underline;
+  }
+
+  /* line 250, ../sass/xcogStyleSheet.scss */
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  /* line 251, ../sass/xcogStyleSheet.scss */
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /* line 252, ../sass/xcogStyleSheet.scss */
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
+    content: "";
+  }
+
+  /* Don't show links for images, or javascript/internal links */
+  /* line 253, ../sass/xcogStyleSheet.scss */
+  pre, blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /* line 254, ../sass/xcogStyleSheet.scss */
+  thead {
+    display: table-header-group;
+  }
+
+  /* css-discuss.incutio.com/wiki/Printing_Tables */
+  /* line 255, ../sass/xcogStyleSheet.scss */
+  tr, img {
+    page-break-inside: avoid;
+  }
+
+  /* line 256, ../sass/xcogStyleSheet.scss */
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 0.5cm;
+  }
+  /* line 258, ../sass/xcogStyleSheet.scss */
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* line 259, ../sass/xcogStyleSheet.scss */
+  h2, h3 {
+    page-break-after: avoid;
+  }
+}

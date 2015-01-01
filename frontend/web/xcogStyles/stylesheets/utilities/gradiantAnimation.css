@@ -18,13 +18,13 @@ limitations under the License.
     Author     : Rob Xcog rob@xcogstudios.com (Im usually friendly)
 */
 @import url(http://fonts.googleapis.com/css?family=Montserrat:700);
-/* line 23, ../sass/gradiantAnimation.scss */
+/* line 23, ../../sass/utilities/gradiantAnimation.scss */
 body {
   background-color: #000;
   overflow: hidden;
 }
 
-/* line 28, ../sass/gradiantAnimation.scss */
+/* line 28, ../../sass/utilities/gradiantAnimation.scss */
 h1 {
   position: absolute;
   width: 100%;
@@ -40,7 +40,7 @@ h1 {
   text-shadow: rgba(18, 7, 7, 0.3) 0 0 1px, rgba(249, 235, 235, 0.3) 0 -1px 2px, rgba(18, 7, 7, 0.3) 0 -1px 2px, rgba(249, 235, 235, 0.3) 0 20px 15px;
 }
 
-/* line 42, ../sass/gradiantAnimation.scss */
+/* line 42, ../../sass/utilities/gradiantAnimation.scss */
 h3 {
   position: absolute;
   width: 100%;
@@ -56,7 +56,7 @@ h3 {
   text-shadow: rgba(18, 7, 7, 0.3) 0 0 1px, rgba(249, 235, 235, 0.3) 0 -1px 2px, rgba(18, 7, 7, 0.3) 0 -1px 2px, rgba(249, 235, 235, 0.3) 0 20px 15px;
 }
 
-/* line 56, ../sass/gradiantAnimation.scss */
+/* line 56, ../../sass/utilities/gradiantAnimation.scss */
 a {
   text-decoration: none;
 }
@@ -153,7 +153,7 @@ a {
     opacity: 1;
   }
 }
-/* line 95, ../sass/gradiantAnimation.scss */
+/* line 95, ../../sass/utilities/gradiantAnimation.scss */
 .text_fade {
   -webkit-animation: fade_text 8s infinite ease-in;
   -moz-animation: fade_text 8s infinite ease-in;
@@ -161,7 +161,7 @@ a {
   animation: fade_text 8s infinite ease-in;
 }
 
-/* line 101, ../sass/gradiantAnimation.scss */
+/* line 101, ../../sass/utilities/gradiantAnimation.scss */
 div {
   position: absolute;
   width: .001vmin;
@@ -170,7 +170,7 @@ div {
   opacity: .25;
 }
 
-/* line 109, ../sass/gradiantAnimation.scss */
+/* line 109, ../../sass/utilities/gradiantAnimation.scss */
 div:nth-child(2) {
   -webkit-box-shadow: 0 0 45vmax 45vmax #ff00ff;
   box-shadow: 0 0 45vmax 45vmax #ff00ff;
@@ -178,7 +178,7 @@ div:nth-child(2) {
   animation: hue 10s 0s linear infinite, move1 19s 0s linear infinite;
 }
 
-/* line 116, ../sass/gradiantAnimation.scss */
+/* line 116, ../../sass/utilities/gradiantAnimation.scss */
 div:nth-child(3) {
   -webkit-box-shadow: 0 0 45vmax 45vmax #ffffff;
   box-shadow: 0 0 45vmax 45vmax #ffffff;
@@ -186,7 +186,7 @@ div:nth-child(3) {
   animation: hue 15s 0s linear infinite, move2 25s 0s linear infinite;
 }
 
-/* line 123, ../sass/gradiantAnimation.scss */
+/* line 123, ../../sass/utilities/gradiantAnimation.scss */
 div:nth-child(4) {
   -webkit-box-shadow: 0 0 45vmax 45vmax #00ffff;
   box-shadow: 0 0 45vmax 45vmax #00ffff;

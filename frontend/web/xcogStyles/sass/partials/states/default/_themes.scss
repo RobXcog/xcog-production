@@ -1,0 +1,35 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 27, 2014, 10:29:29 PM
+    Author     : Rob Xcog rob@xcogstudios.com (Im usually friendly)
+*/
+
+
+// Declaring Vars
+
+$link_color: #00e5ff;
+$link_visited-color: #9cbcb0;
+$link_hover-color: #00e5ff; 
+$link_active-color: #00ffd8;
+
+$glow: #f7b900;
+
+$skullColor-Hover:#00e5ff;
+$skullColor:#eeeeee;
+
+$ejectMenuColor: #3D4B69;
+$ejectMenuColor-Hover: #00e5ff;
+
+a { 
+    text-decoration: none!important;
+       @include transitionEaseIn(.6s, 1s);
+    color: $link_color;
+    &:hover, &:visited
+        {
+        color:$link_hover-color;
+    }
+}

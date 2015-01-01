@@ -18,20 +18,45 @@
 
 use yii\helpers\Html;
 
-echo Html::cssFile('../css/soundManager2Style.css');
+$this->registerCss('../css/soundManager2Style.css');
+$this->registerJs([Html::jsFile('//connect.soundcloud.com/sdk.js.')]);
+$this->registerJs([Html::jsFile('../js/bar-ui.js')]);
 
-echo Html::jsFile('../js/soundManager2JS.js');
-echo Html::jsFile('../js/bar-ui.js');
-
-
+$this->registerJs([Html::jsFile('../js/soundManager2JS.js')]);
 $this->title = 'YarRadi☺!';
 ?>
-
-
 <div class="xcog-yarr">
     <div class="jumbotron-carousel text-center">
-        
+       
         <h1>YarRadi☺! It's about making waves. </h1>
+       
+        
+        <div id='marchingBarsWrapper'>
+            <span><!-- Square container -->
+  <div></div> <!-- Bars -->
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</span>
+        </div>
         
         <p class="lead">
             YarRadi☺! Music from the Underground. 

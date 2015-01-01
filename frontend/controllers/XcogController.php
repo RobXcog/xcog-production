@@ -96,12 +96,21 @@ class XcogController extends Controller
         return $this->render('blog');
     }
 
+    public function actionUpdate()
+{
+        if (Yii::$app->request->isAjax) {
+            return $this->renderAjax('about');
+        } else {
+           return $this->render('resume');     
+            }
+
+}
     public function actionResume()
     {
 $model = new ContactForm();
         if ($model->load(Yii::$app->request->post()) && $model->validate()) {
-            if ($model->sendEmail(Yii::$app->params['adminEmail'])) {
-                Yii::$app->session->setFlash('success', 'Thank you for contacting us. We will respond to you as soon as possible.');
+            if ($model->sendEmail(Yii::$app->params['resumeEmail'])) {
+                Yii::$app->session->setFlash('success', 'Thank you for contacting us. Your attention is always appreciated.');
             } else {
                 Yii::$app->session->setFlash('error', 'There was an error sending email.');
             }
@@ -178,8 +187,13 @@ $model = new ContactForm();
 
     public function actionAbout()
     {
-        return $this->render('about');
-    }
+        if (Yii::$app->request->isPjax) {
+            return $this->renderPartial('about');
+        } else {
+        
+            return $this->render('about');
+        }
+            }
 
     public function actionSignup()
     {

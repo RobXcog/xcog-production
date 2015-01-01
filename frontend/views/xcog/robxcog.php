@@ -65,15 +65,19 @@ $this->params['breadcrumbs'][] = $this->title;
     <hr>
     <span class="fa-border pull-left SIC symbolist">.symbolist</span>     <h2>$this->me.parse(<a type="link" class="text-justify" data-toggle="modal" data-target="#rachet">#SELFIE</a>);</h2>
     <hr>
-   I do not like to talk about myself however I do like to talk about what I want to do or how we can do things together. If you havent noticed by now I am a bit of a " metal head " however I respect all music and I respect talent and dedication. I enjoy all music and make it a point to judge all things slowly.  
-    <br>My life was loss and strife for almost half of it, a life grown from my own choices so I had to make the choice to make my life the way I want it. I became a fire-fighter for a short time and made new friends. Then I taught myself a handful of programming languages and now I find myself here. Writing to the faceless users my life is so dedicated to serving. from every moment. I am an introvert but I like to host. I am a philanthropist at heart but it is not a title I can say I have earned yet.I love music and animation. I love math and I am enthralled with (usually human)psychology, with a focus on emotion (deception detection). 
+   I do not like to talk about myself however I do like to talk about what I want to do or how we can do things together. If you haven't noticed by now I am a bit of a " metal head " however I respect all music and I respect talent and dedication. I enjoy all music and make it a point to judge all things slowly.  
+    <br>I am hopping to make this site valuable to my community and  I have experienced loss, strife and  than respite or understanding. For close to half my life I wasted to my ignorance though I have learned not to dwell on things and to always look for the best choice in all situations. I have also taught myself that important decisions are difficult to make in the heat of the moment so I spend time planning my choices and dispositions. My troubles were grown from my own choices so I had to make the choice to make my life the way I want it. I became a fire-fighter for a short time and made new friends. Then I taught myself a handful of programming languages and now I find myself here, with goals and a purpose. I found passion in my pencils and guitars. I chosen a res  Writing to the faceless users my life is so dedicated to serving. from every moment. I am an introvert but I like to host. I am a philanthropist at heart but it is not a title I can say I have earned yet.I love music and animation. I love math and I am enthralled with (usually human)psychology, with a focus on emotion (deception detection). 
    <hr>
+   
+   <div class="secondSegContent">
+       <span class="SIC fa-border">.excogitate</span> 
    I hope to share over time, who I am, my passions, my fears, my rage .. my tears. <br>
    <hr>
-   Thank you for your interest in me and my work. I hope to bring some quality projects to the public soon and I encourage input and critiques from across the whole board. I am always happy to chat about the future. 
+   Thank you for your interest in me and my work. I hope to bring some quality projects to the public soon and I encourage input and critiques from across the whole ether. I am always happy to chat about the future. 
    
     I appreciate your attention. Thank You. 
     </p>
+    </div>
     <p class="body-content">
         <a href=" <?= yii\helpers\Url::toRoute(['xcog/resume'],['breadcrumbs'=>['label'=>'Rob Xcog', 'url' => 'xcog/resume']]) ?>">Résumé</a> and my <a href="/robxcog/robintheblog">blog</a>. I also will be posting my attempts at art, music and logic. Soon. Very Soon. \m/ 
     </p>
@@ -89,7 +93,7 @@ $this->params['breadcrumbs'][] = $this->title;
     </div>
 </div>
 <!-- Modal -->
-<div class="modal fade bs-example-modal-lg" id="rachet" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade bs-example-modal-lg" id="rachet" tabindex="-1" role="dialog" aria-labelledby="Hashtag Ratchet " aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">

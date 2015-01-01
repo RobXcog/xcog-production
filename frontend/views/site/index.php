@@ -17,10 +17,22 @@
 
 
 /* @var $this yii\web\View */
+
+use yii\widgets\Pjax;
+use yii\helpers\Html;
+use yii\helpers\Url;
+use yii\bootstrap\Modal;
+
 $this->title = 'XCOG Studios dot com';
-?>
-<?php
+
 $this->registerMetaTag(['name' => 'keywords', 'content' => 'xcog, xcogstudios, robxcog, webdesign, main, frontpage, music, portland, graphics, underground, photos, artists, artist, grafitti, metal, hip-hop, beats, business, community, blog']);
+
+
+/*
+$this->registerJs('$(function() { $("#pjax-container").pjax("#pjax-Metal", { fragment: ".mainMenu" }); });');
+*/
+
+
 ?>
 <!-- I am collapsed by default -->
 
@@ -54,29 +66,29 @@ $this->registerMetaTag(['name' => 'keywords', 'content' => 'xcog, xcogstudios, r
    
             <div class="row ">
                 <div class="clearfix"></div>  
-                <div class="col-xs-12 col-sm-1">
+                <div class="col-xs-12 col-md-2 lg-4 ">
                     <i class="fa fa-music fa-2x icon-o"></i>
                 </div>
 
-                <div class="col-xs-12 col-sm-2 text-warning text-center">
-                    PORTLAND UNDERGROUND 
+                <div class="col-xs-12 col-md-2 lg-4  text-warning text-center">
+                    PORTLAND UNDERGROUND ARTISTS
                 </div>
 
-                <div class="col-xs-12 col-sm-1 col-sm-offset-1">
+                <div class="col-xs-12 col-md-2 col-sm-offset-1">
                     <i class="fa fa-code fa-2x"></i>
                 </div>
 
-                <div class="col-xs-12 col-sm-2  text-info text-center">
-                    INTERACTIVE WEB DESIGN
+                <div class="col-xs-12 col-md-2  text-info text-center">
+                    AUDIENCE FOCUSED DESIGN 
                 </div>
 
-                <div class="col-xs-12 col-sm-1 col-sm-offset-1">
+                <div class="col-xs-12 col-md-2 col-sm-offset-1">
 
                     <i class="fa fa-group fa-2x"></i>
                 </div>
 
-                <div class="col-xs-12 col-sm-2 text-success text-center">
-                    COMMUNITY DRIVEN 
+                <div class="col-xs-12 col-md-2 text-success text-center">
+                   FOR A BETTER COMMUNITY 
                 </div>
             
 
@@ -84,18 +96,24 @@ $this->registerMetaTag(['name' => 'keywords', 'content' => 'xcog, xcogstudios, r
        
 
         <hr>
-         <h3> We are currently in Alpha Testing please excuse the mess :) </h3> <small> Your attention and patience is always appreciated! </small>         
+         <h3> We are a project that is constantly evolving. :) </h3> <small> Your attention and patience is always appreciated! </small>         
         <p><i class="fa fa-cog fa-spin"></i><h2>Up The Game.</h2></p>
 
     <hr>
-        <p><button id="mrLevelButton" type="button"class="btn btn-lg btn-success" target="/about"data-toggle="tooltip" data-placement="top" title="D I N G !" ><i class="fa fa-level-up fa-2x pull-left"></i>Level Up ! +</button></p>
+    
+     <?= Html::button('<i class="fa fa-level-up fa-2x pull-left"></i>Level Up ! +', ['data-xcog' => 'levelUp',
+         'data-toggle' => 'tooltip',
+         'data-placment' => 'top',
+         'title' => 'D I N G !']) ?>
+        
 
 
 
 
     </div>
+
     <div class="row">
-        <div class="col-lg-4">
+        <div class="col-xs-12 col-sm-6 col-m-3">
             <div class="panel panel-primary xcogPannel" >
                 <div class="panel-heading"> 
                     <h3 class="panel-title">Simply With Purpose</h3>
@@ -105,13 +123,13 @@ $this->registerMetaTag(['name' => 'keywords', 'content' => 'xcog, xcogstudios, r
                     <p>Simple does not mean easy. A lot of effort can go into making things <strong>appear</strong> effortless and making a user focused website is an art and science. Xcog can set you up from the ground up or touch up an already existing project. <a hre='mailto:rob@xcogstudios.com'> Rob Xcog</a>. Touch below to see some past work.</p>
                                    
                     <hr>
-                    <p><a class="btn btn-primary" href="<?= yii\helpers\Url::toRoute('xcog/yarr') ?>">Let's Build Something &raquo;</a></p>
+                    <p><a class="btn btn-primary" href="<?= yii\helpers\Url::toRoute('/xcog/yarr') ?>">Let's Build Something &raquo;</a></p>
 
 
                 </div>
             </div>
         </div> <!-- col end -->
-        <div class="col-lg-4">
+        <div class="col-xs-12 col-sm-6 col-m-3">
 
             <div class="panel panel-info">
                 <div class="panel-heading"> 
@@ -126,13 +144,26 @@ $this->registerMetaTag(['name' => 'keywords', 'content' => 'xcog, xcogstudios, r
                         <a class="btn btn-primary" href=" <?= yii\helpers\Url::toRoute('xcog/about') ?>">To The XCOG Showcase! &raquo;</a></p>
 
                 </div>
+               
             </div>
 
 
+          
+      <div id="aboutdiv"></div>
+
+    <?php Pjax::begin() ?>
+
+        <?= Html::a(
+            'about',
+            Url::to(['xcog/about']),
+            ['data-pjax'=> '#aboutdiv']
+        ) ?>
+
+    <?php Pjax::end(); ?>
 
 
         </div> <!-- col end -->
-        <div class="col-lg-4">
+        <div class="col-xs-12 col-sm-6 col-m-3">
 
             <div class="panel panel-success xcogPannel">
                 <div class="panel-heading"> 
