@@ -15,11 +15,12 @@ $skullColor-Hover:#00e5ff;
 $skullColor:#eeeeee;
 $ejectMenuColor: #3D4B69;
 $ejectMenuColor-Hover: #00e5ff;
-
+$backgroundColorMid: #2e374e;
 
 
 @media screen and (min-width: 240px) {
     html {
+        background: $backgroundColorMid;
         margin-left: calc(100vw - 100%);
         margin-right: 0;
         
@@ -77,9 +78,10 @@ body::-webkit-scrollbar {
     color: darkgrey;
     position: fixed;
     top: 0;
+    left: -25px;
     float: left;
     padding-top: 135px;
-    display: block;  
+    display: inline-block;  
     width: $menu-width;
     height: 100%;
     background: #3B3B3B;
@@ -102,7 +104,7 @@ body::-webkit-scrollbar {
         &:hover, &:focus {
           background: linear-gradient(#484848, #186c96);
         }
-    }
+    
     &:after {
         content: "";
         position: absolute;
@@ -146,6 +148,18 @@ body::-webkit-scrollbar {
       }
     } 
 }
+
+#xcogIconLogoXXX {
+    display: block;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+     left: 0;
+     top: 0;
+     fill: grey;
+}
+
+
 svg.icon.menuEject{
     fill:$ejectMenuColor;
 
@@ -165,11 +179,10 @@ svg.icon.menuEject{
 
 //header
 #xcogHeader {
-    z-index: 40;
+    z-index: 39;
     display: inline-block;
-    .subHeader {
-        
-    }
+    max-height: 100px;
+   
     .skullSVG
         {
             fill: $skullColor;
@@ -177,8 +190,26 @@ svg.icon.menuEject{
             &:hover, &:focus {
             fill: $skullColor-Hover;
         }
-        z-index: 20;
+        z-index: 40;
     }
+    #xcogIconLogoCog{
+        
+        max-height: 32px;
+        max-width: 32px;
+        fill: darkgrey;
+        stroke: black;
+     
+    
+    }
+        #xcogIconLogoXXX {
+
+             fill: darkgrey;
+        stroke: black;
+
+        max-height: 32px;
+        max-width: 32px;
+}
+
     -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
     -moz-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
@@ -200,7 +231,8 @@ svg.icon.menuEject{
     left: 0;
     transition: all 0.3s ease;
 }
-//end of header
+}
+
 
 // panel
 .xcogPannel {
@@ -272,7 +304,6 @@ display: inline-block;
     color: black;
     font-size: 160px;
 }
-
 .iconEvil{
     position: relative;
     fill: black;
@@ -302,7 +333,6 @@ display: inline-block;
     z-index: 8;
     fill: #faff00;
 }
-
 
 
 // font transitions and chaos
@@ -340,10 +370,3 @@ display: inline-block;
         fill: #ff00e1;
     }
 }
-
-.subTitle {
-    color: lightGrey;
-    font-size: 12;
-}
-
-// logic

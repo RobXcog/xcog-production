@@ -57,4 +57,4 @@ $(document).ready(function() {
     });
 });
 
-$.pjax.reload({container:'#menuPjax'});
+$.pjax.reload({container:"[data-xcog='pjaxCatcher'"});

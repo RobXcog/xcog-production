@@ -20,6 +20,7 @@
 
 use yii\widgets\Pjax;
 use yii\helpers\Html;
+use yii\helpers\BaseHtml;
 use yii\helpers\Url;
 use yii\bootstrap\Modal;
 
@@ -101,7 +102,7 @@ $this->registerJs('$(function() { $("#pjax-container").pjax("#pjax-Metal", { fra
 
     <hr>
     
-     <?= Html::button('<i class="fa fa-level-up fa-2x pull-left"></i>Level Up ! +', ['data-xcog' => 'levelUp',
+     <?= Html::tag('a','<i class="fa fa-level-up fa-2x pull-left"></i>Level Up ! +', ['data-xcog' => 'levelUp',
          'data-toggle' => 'tooltip',
          'data-placment' => 'top',
          'title' => 'D I N G !']) ?>
@@ -151,13 +152,13 @@ $this->registerJs('$(function() { $("#pjax-container").pjax("#pjax-Metal", { fra
           
       <div id="aboutdiv"></div>
 
-    <?php Pjax::begin() ?>
+    <?php Pjax::begin(); ?>
 
         <?= Html::a(
             'about',
             Url::to(['xcog/about']),
             ['data-pjax'=> '#aboutdiv']
-        ) ?>
+        ); ?>
 
     <?php Pjax::end(); ?>
 

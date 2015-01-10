@@ -29,9 +29,9 @@ class AppAsset extends AssetBundle
     public $js = [              
         'xcogStyles/javascripts/jquery.pjax.js',
         'xcogStyles/javascripts/jquery1.11.js',
-        'xcogStyles/javascripts/bootstrap.js',
+       // 'xcogStyles/javascripts/bootstrap.js',
         'xcogStyles/javascripts/xcogRX.js',
-        'xcogStyles/javascripts/bootstrap-sprockets.js',
+        //'xcogStyles/javascripts/bootstrap-sprockets.js',
         'xcogStyles/javascripts/modernizr.custom.18754.js',
         'xcogStyles/javascripts/smoothStateAdvanced.js',
     ];

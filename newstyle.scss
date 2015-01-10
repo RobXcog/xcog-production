@@ -1,0 +1,129 @@
+$brandXcogPrimaryColor: #cccccc;
+$brandXcogPrimaryColorComp: #69989b;
+$brandXcogPrimaryColorShadow: #00e5f9;
+$brandXcogHighlight: #ffffff;
+$brandXcogPrimaryColorStroke: #d3fcff;
+$brandStudiosColor: #468aaa;
+$brandColorElectric: #00e5f9;
+$brandStudiosColorHighlight: #00fffa;
+$CSS-Tricks-Skull: #468aaa;
+
+$xcogBiohazad: #0fcbff;
+$xcogBiohazadStroke: #9bfaff;
+
+@mixin transformPropertiesHover ($duration, $delay) {
+  
+   -webkit-transition: all $duration, $delay ease;
+    -moz-transition: all $duration, $delay ease;
+    -ms-transition: all $duration, $delay ease;
+    -o-transition: all $duration, $delay ease;
+    transition: all $duration, $delay ease;  
+  
+}
+
+@mixin backgroundHeader () {
+  
+ box-shadow: rgba(0, 0, 0, 0.05) 2px 0px 0px 2px inset;
+  -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzhmOTZhZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjMlIiBzdG9wLWNvbG9yPSIjM2Y0YzZiIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iOTclIiBzdG9wLWNvbG9yPSIjM2Y0YzZiIiBzdG9wLW9wYWNpdHk9IjAuOSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDMxOTQ0IiBzdG9wLW9wYWNpdHk9IjAuOSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top, rgba(143,150,173,1) 0%, rgba(63,76,107,1) 3%, rgba(63,76,107,0.9) 97%, rgba(3,25,68,0.9) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(143,150,173,1)), color-stop(3%,rgba(63,76,107,1)), color-stop(97%,rgba(63,76,107,0.9)), color-stop(100%,rgba(3,25,68,0.9)));
+    background: -webkit-linear-gradient(top, rgba(143,150,173,1) 0%,rgba(63,76,107,1) 3%,rgba(63,76,107,0.9) 97%,rgba(3,25,68,0.9) 100%);
+    background: -o-linear-gradient(top, rgba(143,150,173,1) 0%,rgba(63,76,107,1) 3%,rgba(63,76,107,0.9) 97%,rgba(3,25,68,0.9) 100%);
+    background: -ms-linear-gradient(top, rgba(143,150,173,1) 0%,rgba(63,76,107,1) 3%,rgba(63,76,107,0.9) 97%,rgba(3,25,68,0.9) 100%);
+    background: linear-gradient(to bottom, rgba(143,150,173,1) 0%,rgba(63,76,107,1) 3%,rgba(63,76,107,0.9) 97%,rgba(3,25,68,0.9) 100%);
+      
+}
+
+
+//reusables
+
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.flex-item {
+  background: tomato;
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
+  
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+}
+
+
+#contentView {  
+  height: 100%;
+    width: 100%;
+  background: grey;
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+   
+}
+
+//header
+
+#dashHeader {
+    flex-wrap: no-wrap;
+    fl: center;
+    height: 100px;
+    width: 100%;
+    @include backgroundHeader;
+    
+       
+}
+
+#dashMenu {
+    
+    order: 1;
+    flex-grow: 1;
+}
+
+#dashHeadboard {
+    
+    order: 2;
+    flex-grow: 2;
+        
+}
+
+
+#dashAccount {
+    order:3;
+    flex-grow:1;
+    
+}
+
+#headBoard {
+    
+   flex-direction: column;
+}
+
+#headboardLogo {
+    order:1;
+    
+}
+
+#headboardTitle {
+    order:2;
+    
+}

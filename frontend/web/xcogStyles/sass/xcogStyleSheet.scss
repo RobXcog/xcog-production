@@ -43,7 +43,6 @@ time, mark, audio, video {
   font-size: 100%;
   vertical-align: baseline;
   
-
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -174,10 +173,10 @@ h1, h2, h3, h4, h5, h6 { font-weight: bold; }
  * Author: rob@xcogstudios.com
  */
 
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "partials/shortcircuit/_default.scss";
 
-@import "partials/states/default/_structures.scss";
-@import "partials/states/default/_text.scss";
-@import "partials/states/default/_themes.scss";
 
 
 

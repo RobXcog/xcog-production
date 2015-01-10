@@ -10,6 +10,10 @@ return [
     'bootstrap' => ['log'],
     'controllerNamespace' => 'frontend\controllers',
     'components' => [
+        'public' => [
+          'class' => 'frontend\controllers\Public',
+            'defaultAction' => 'index',
+        ],
 
         'xcog' => [
             'class' => 'frontend\controllers\Xcog',
@@ -36,21 +40,22 @@ return [
                         'application/json' => 'yii\web\JsonParser',
                     ]
                 ],
-         'defaultRoute' => 'site/index',
+        'defaultRoute' => 'index.php',
         'urlManager' => [
            
-            'baseUrl' => '/',
+           'baseUrl' => 'xcogstudios',
             'enablePrettyUrl' => true,
             'enableStrictParsing' => true,
             'showScriptName' => false,
            
             'rules' => [
-                ['class' => 'yii\rest\UrlRule',
-                    'controller' => 'xcog',
+               //['class' => 'yii\rest\UrlRule',
+                 //   'controller' => 'xcog',
                     
-                    ], 
+                   // ], 
                 
                 'main' => 'site/index',
+                'mighty' => 'public/index',
                 'robxcog/resume' => 'xcog/resume',
                 'about' => 'xcog/about',
                 'thefront' => 'xcog/index',
